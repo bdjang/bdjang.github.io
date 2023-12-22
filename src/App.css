@@ -61,3 +61,10 @@ ul li {
         /* animation: pixelPanel-spin infinite 5s linear; */
     }
 }
+
+/* MOBILE STYLES */
+@media screen and (max-width: 450px) {
+    .titleText h1 {
+        font-size: 40px;
+    }
+}
