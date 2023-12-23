@@ -12,11 +12,13 @@
 
 /* PIXEL PANEL */
 .pixelPanel {
+    /* box-shadow: inset 0 0 5em #646cffaa; */
     display: inline-block;
     will-change: filter;
     transition: filter 300ms;
 }
 .pixelPanel:hover {
+    /* filter: drop-shadow(30px 10px 4px #4444dd); */
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 .sunGlasses {
@@ -31,12 +33,15 @@
 }
 .pixelPanel:hover .oldMan table td {
     padding: 10px !important;
-    transition: padding 1500ms ease;
 }
 
 /* PIXEL: OLD MAN */
 .oldMan {
     opacity: 0;
+    transition: opacity 500ms ease;
+}
+.oldMan table td {
+    transition: padding 1500ms ease;
 }
 .pixelPanel:hover .oldMan {
     opacity: 1;
