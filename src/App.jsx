@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import List from './components/List'
+import Button from './components/Button'
 import PixelArt from './components/PixelArt'
 
-function App() {
+export default function App() {
 
     return (
         <>
             <div className="titleText">
-                <h1>bdjang.github.io</h1>
+                <h1 onMouseEnter={e => e.target.style.color = '#cccccc'} onMouseLeave={e => e.target.style.color = '#ffffff'}>bdjang.github.io</h1>
             </div>
             <div className="pixelPanel">
                 <PixelArt />
@@ -44,5 +44,3 @@ function App() {
         </>
     )
 }
-
-export default App
