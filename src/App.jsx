@@ -6,12 +6,18 @@ import PixelArt from './components/PixelArt'
 
 export default function App() {
     
-    const pixelPanelEl = document.getElementsByClassName("pixelPanel");
-    function mouseOver() {
-        pixelPanelEl[0].style.filter = "drop-shadow(0 0 2em #646cffaa)";
+    const magicalSwordEl = document.getElementsByClassName("magicalSword");
+    const flameArtEl = document.getElementsByClassName("flameArt");
+    const sunGlassesEl = document.getElementsByClassName("sunGlasses");
+    function pixelClick() {
+        flameArtEl[0].style.opacity = '1';
+        magicalSwordEl[0].style.opacity = '1';
+        sunGlassesEl[0].style.opacity = '1';
     }
-    function mouseLeave() {
-        pixelPanelEl[0].style.filter = "none";
+    function pixelLeave() {
+        flameArtEl[0].style.opacity = '0';
+        magicalSwordEl[0].style.opacity = '0';
+        sunGlassesEl[0].style.opacity = '0';
     }
 
     return (
@@ -19,7 +25,7 @@ export default function App() {
             <div className="titleText">
                 <h1 onMouseEnter={e => e.target.style.color = '#cccccc'} onMouseLeave={e => e.target.style.color = '#ffffff'}>bdjang.github.io</h1>
             </div>
-            <div className="pixelPanel" onMouseOver={mouseOver} onMouseLeave={mouseLeave}>
+            <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave}>
                 <PixelArt />
             </div>
             <div className="introText">
@@ -28,7 +34,7 @@ export default function App() {
             <hr />
             <div className="projectDesc">
                 <h2>Current Project: Pixel Art in Email</h2>
-                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that renders one way in light mode and another in dark mode. The email client used will determine how the pixel art transforms its look in dark mode.</p>
+                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that renders one way in light mode and another in dark mode. The email client hosting the pixel art will determine how it changes in dark mode.</p>
             </div>
             {/* <p>Add some pixel art into your emails</p>
             <ul>
