@@ -27,6 +27,7 @@
     display: inline-block;
     height: 320px;
     transition: filter 1000ms ease;
+    -webkit-transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
     width: 320px;
 }
 .pixelPanel:hover {
