@@ -5,22 +5,30 @@ import Button from './components/Button'
 import PixelArt from './components/PixelArt'
 
 export default function App() {
+    
+    const pixelPanelEl = document.getElementsByClassName("pixelPanel");
+    function mouseOver() {
+        pixelPanelEl[0].style.filter = "drop-shadow(0 0 2em #646cffaa)";
+    }
+    function mouseLeave() {
+        pixelPanelEl[0].style.filter = "none";
+    }
 
     return (
         <>
             <div className="titleText">
                 <h1 onMouseEnter={e => e.target.style.color = '#cccccc'} onMouseLeave={e => e.target.style.color = '#ffffff'}>bdjang.github.io</h1>
             </div>
-            <div className="pixelPanel">
+            <div className="pixelPanel" onMouseOver={mouseOver} onMouseLeave={mouseLeave}>
                 <PixelArt />
             </div>
             <div className="introText">
                 <h2>I am a web tinkerer. I experiment with code. I sometimes create digital art.</h2>
             </div>
             <hr />
-            <div>
-                <h1>Current Project</h1>
-                <h4>Pixel Art in Email</h4>
+            <div className="projectDesc">
+                <h2>Current Project: Pixel Art in Email</h2>
+                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that renders one way in light mode and another in dark mode. The email client used will determine how the pixel art transforms its look in dark mode.</p>
             </div>
             {/* <p>Add some pixel art into your emails</p>
             <ul>
