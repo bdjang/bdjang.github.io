@@ -8,23 +8,25 @@
 /* TITLE TEXT */
 .titleText h1 {
     margin: 34px 0 60px 0;
+    transition: color 300ms ease;
 }
 /* INTRO TEXT */
 .introText h2 {
     margin: 60px 0 20px 0;
 }
+/* PROJECT DESCRIPTION TEXT */
+.projectDesc {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.projectDesc p span {
+    font-weight: 600;
+}
 
 /* PIXEL PANEL */
 .pixelPanel {
-    box-shadow: 0.5em 0.5em 1px #646cffaa, -0.5em -0.5em 1px #DD2C00;
     display: inline-block;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.pixelPanel:hover {
-    box-shadow: none;
-    filter: drop-shadow(0 0 2em #646cffaa);
-    transition: box-shadow 1500ms ease;
+    transition: filter 300ms ease;
 }
 .sunGlasses {
     left: 79px;
@@ -36,30 +38,9 @@
     opacity: 1;
     transition: opacity 1500ms ease;
 }
-.pixelPanel:hover .oldMan table td {
-    padding: 10px !important;
-}
-
-/* PIXEL: OLD MAN */
-.oldMan {
-    opacity: 0;
-    transition: opacity 500ms ease;
-}
-.oldMan table td {
-    transition: padding 1500ms ease;
-}
-.pixelPanel:hover .oldMan {
-    opacity: 1;
-    transition: opacity 1500ms ease;
-}
-
 @keyframes pixelPanel-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
