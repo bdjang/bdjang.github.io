@@ -25,7 +25,7 @@ export default function App() {
             <div className="titleText">
                 <h1 onMouseEnter={e => e.target.style.color = '#cccccc'} onMouseLeave={e => e.target.style.color = '#ffffff'}>bdjang.github.io</h1>
             </div>
-            <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave}>
+            <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave} onTouchEnd={pixelLeave}>
                 <PixelArt />
             </div>
             <div className="introText">
