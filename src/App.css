@@ -76,17 +76,17 @@
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 2em #fcb514);
+    filter: drop-shadow(0 0 2.5em #fcb514);
     left: 270px;
     top: 118px;
     transition: opacity 250ms ease;
 }
 @keyframes flameAnim {
     0% { opacity: 1; }
-    15% { opacity: .9; }
+    15% { opacity: .85; }
     25% { opacity: .75; }
     35% { opacity: .65; }
-    50% { opacity: .5; }
+    50% { opacity: 1; }
     75% { opacity: .7; }
     100% { opacity: .75; }
 }
