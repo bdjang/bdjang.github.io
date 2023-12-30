@@ -31,7 +31,7 @@
     width: 320px;
 }
 .pixelPanel:hover {
-    /* filter: drop-shadow(0 0 2em #646cffaa); */
+    filter: drop-shadow(0 0 2em #646cffaa);
     transition: filter 1000ms ease;
 }
 
@@ -69,14 +69,14 @@
 }
 /* MAGICAL SWORD */
 .magicalSword {
-    /* filter: drop-shadow(0 0 2em #ff0000); */
+    filter: drop-shadow(0 0 2em #ff0000);
     left: -61px;
     top: 63px;
     transition: opacity 250ms ease;
 }
 /* FLAME */
 .flameArt {
-    /* filter: drop-shadow(0 0 2em #ff0000); */
+    filter: drop-shadow(0 0 2em #ff0000);
     left: 270px;
     top: 118px;
     transition: opacity 250ms ease;
