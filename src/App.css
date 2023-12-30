@@ -52,7 +52,7 @@
     to { transform: rotate(360deg); }
 }
 @media (prefers-reduced-motion: no-preference) {
-    .pixelPanel:hover .sunGlasses {
+    .sunGlasses:hover {
         animation: pixelPanel-spin 750ms ease;
     }
 }
@@ -64,9 +64,6 @@
     opacity: 1;
     transition: opacity 1500ms ease;
 }
-.pixelPanel:hover .oldMan table td {
-    padding: 10px !important;
-}
 /* MAGICAL SWORD */
 .magicalSword {
     filter: drop-shadow(0 0 2em #ff0000);
@@ -76,10 +73,24 @@
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 2em #ff0000);
+    filter: drop-shadow(0 0 2em #fcb514);
     left: 270px;
     top: 118px;
     transition: opacity 250ms ease;
+}
+@keyframes flameAnim {
+    0% { opacity: 1; }
+    15% { opacity: .9; }
+    25% { opacity: .75; }
+    35% { opacity: .65; }
+    50% { opacity: .5; }
+    75% { opacity: .7; }
+    100% { opacity: .75; }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .flameArt {
+        animation: flameAnim 1500ms ease-in-out infinite alternate;
+    }
 }
 
 /* MOBILE STYLES */
