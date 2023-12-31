@@ -50,15 +50,6 @@
     top: 40px;
     transition: opacity 350ms ease;
 }
-@keyframes pixelPanel-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-@media (prefers-reduced-motion: no-preference) {
-    .sunGlasses:hover {
-        animation: pixelPanel-spin 750ms ease;
-    }
-}
 /* OLD MAN */
 .oldMan table td {
     transition: padding 1500ms ease;
@@ -72,7 +63,7 @@
     filter: drop-shadow(0 0 2em #ff0000);
     left: -61px;
     top: 63px;
-    transition: opacity 250ms ease;
+    transition: opacity 250ms ease, transform 500ms ease;
 }
 /* FLAME */
 .flameArt {
