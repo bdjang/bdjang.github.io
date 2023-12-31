@@ -12,11 +12,13 @@ export default function App() {
     function pixelClick() {
         flameArtEl[0].style.opacity = '1';
         magicalSwordEl[0].style.opacity = '1';
+        magicalSwordEl[0].style.transform = 'rotate(360deg) scale(1)';
         sunGlassesEl[0].style.opacity = '1';
     }
     function pixelLeave() {
         flameArtEl[0].style.opacity = '0';
         magicalSwordEl[0].style.opacity = '0';
+        magicalSwordEl[0].style.transform = 'rotate(0) scale(0)';
         sunGlassesEl[0].style.opacity = '0';
     }
 
