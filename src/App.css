@@ -60,20 +60,20 @@
 }
 /* MAGICAL SWORD */
 .magicalSword {
-    filter: drop-shadow(0 0 2em #ff0000);
+    filter: drop-shadow(0 0 2em #ff0000) drop-shadow(0 0 1.5em #ff0000);
     left: -61px;
     top: 63px;
     transition: opacity 250ms ease, transform 500ms ease;
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 2.5em #fcb514);
+    filter: drop-shadow(0 0 2.5em #fcb514) drop-shadow(0 0 5em #ff8663);
     left: 270px;
     top: 118px;
     transition: opacity 250ms ease;
 }
 @keyframes flameAnim {
-    0% { opacity: 1; }
+    0% { opacity: 1; transform: skew(2deg, 2deg); }
     15% { opacity: .85; }
     25% { opacity: .75; }
     35% { opacity: .65; }
