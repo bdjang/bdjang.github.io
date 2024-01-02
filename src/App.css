@@ -48,12 +48,9 @@
 .sunGlasses {
     left: 79px;
     top: 40px;
-    transition: opacity 350ms ease;
+    transition: opacity 750ms ease;
 }
 /* OLD MAN */
-.oldMan table td {
-    transition: padding 1500ms ease;
-}
 .pixelPanel:hover .oldMan {
     opacity: 1;
     transition: opacity 1500ms ease;
@@ -63,11 +60,11 @@
     filter: drop-shadow(0 0 2em #ff0000) drop-shadow(0 0 1.5em #ff0000);
     left: -61px;
     top: 63px;
-    transition: opacity 250ms ease, transform 500ms ease;
+    transition: opacity 1000ms ease, transform 500ms ease;
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 2.5em #fcb514) drop-shadow(0 0 5em #ff8663);
+    filter: drop-shadow(0 0 3em #fcb514);
     left: 270px;
     top: 118px;
     transition: opacity 250ms ease;
