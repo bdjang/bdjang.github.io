@@ -33,8 +33,6 @@ body {
 }
 
 h1 {
-    color: #1b1b1b;
-    filter: drop-shadow(0 0 .25em #ff0000);
     font-size: 3.2em;
     line-height: 1.1;
     transition: color 1500ms ease;
