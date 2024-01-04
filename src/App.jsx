@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Button from './components/Button'
 import PixelArt from './components/PixelArt'
-import PixelName from './components/PixelName'
 
 export default function App() {
     
