@@ -69,8 +69,8 @@
     top: 118px;
     transition: opacity 250ms ease;
 }
-@keyframes flameAnim {
-    0% { opacity: 1; transform: skew(2deg, 2deg); }
+@keyframes flameGlow {
+    0% { opacity: 1; }
     15% { opacity: .85; }
     25% { opacity: .75; }
     35% { opacity: .65; }
@@ -78,9 +78,17 @@
     75% { opacity: .7; }
     100% { opacity: .75; }
 }
+@keyframes flameFlicker {
+    50% { opacity: 1; transform: scale(-1, 1); }
+    100% { opacity: 1; transform: scale(1, 1); }
+}
 @media (prefers-reduced-motion: no-preference) {
     .flameArt {
-        animation: flameAnim 1500ms ease-in-out infinite alternate;
+        animation: flameFlicker 200ms linear infinite;
+        animation-timing-function: steps(1, start);
+    }
+    .flameArt table {
+        animation: flameGlow 1500ms ease-in-out infinite alternate;
     }
 }
 
@@ -90,3 +98,9 @@
         font-size: 40px;
     }
 }
+
+/* .namePix {
+    height: 30px;
+    width: 200px;
+    margin: 0 auto 80px;
+} */
