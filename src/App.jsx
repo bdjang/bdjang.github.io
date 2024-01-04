@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Button from './components/Button'
 import PixelArt from './components/PixelArt'
+import PixelName from './components/PixelName'
 
 export default function App() {
     
@@ -25,7 +26,7 @@ export default function App() {
     return (
         <>
             <div className="titleText">
-                <h1 onMouseEnter={e => e.target.style.color = '#f2f2f2'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
+                <h1 onMouseEnter={e => e.target.style.color = '#ff0000'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
             </div>
             <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave} onTouchEnd={pixelLeave}>
                 <PixelArt />
@@ -37,6 +38,7 @@ export default function App() {
             <div className="projectDesc">
                 <h2>Current Project: Pixel Art in Email</h2>
                 <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that renders one way in light mode and another in dark mode. The email client hosting the pixel art will determine how it changes in dark mode.</p>
+                {/* <p>I look for ways to create art in unexpected places.</p> */}
             </div>
             {/* <p>Add some pixel art into your emails</p>
             <ul>
