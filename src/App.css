@@ -60,10 +60,16 @@
 }
 /* MAGICAL SWORD */
 .magicalSword {
-    filter: drop-shadow(0 0 2em #ff0000) drop-shadow(0 0 1.5em #ff0000);
     left: -61px;
     top: 63px;
     transition: opacity 1000ms ease, transform 500ms ease;
+}
+@keyframes swordGlow {
+    0% { filter: drop-shadow(0 0 1em #ffffff); }
+    25% { filter: drop-shadow(0 0 .75em #ffffff); }
+    50% { filter: drop-shadow(0 0 .5em #ffffff); }
+    75% { filter: drop-shadow(0 0 .25em #ffffff); }
+    100% { filter: drop-shadow(0 0 .1em #ffffff); }
 }
 /* FLAME */
 .flameArt {
@@ -92,6 +98,9 @@
     }
     .flameArt table {
         animation: flameGlow 1500ms ease-in-out infinite alternate;
+    }
+    .magicalSword {
+        animation: swordGlow 1500ms linear infinite alternate;
     }
 }
 
