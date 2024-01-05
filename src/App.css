@@ -21,6 +21,9 @@
 .projectDesc p span {
     font-weight: 600;
 }
+.projectDesc p {
+    color: #848d97;
+}
 
 /* PIXEL PANEL */
 .pixelPanel {
