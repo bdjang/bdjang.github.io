@@ -10,15 +10,13 @@ export default function App() {
     const flameArtEl = document.getElementsByClassName("flameArt");
     const sunGlassesEl = document.getElementsByClassName("sunGlasses");
     function pixelClick() {
-        flameArtEl[0].style.opacity = '1';
         magicalSwordEl[0].style.opacity = '1';
-        magicalSwordEl[0].style.transform = 'rotate(360deg) scale(1)';
+        magicalSwordEl[0].style.transform = 'rotate(360deg) scale(1) translate(0)';
         sunGlassesEl[0].style.opacity = '1';
     }
     function pixelLeave() {
-        flameArtEl[0].style.opacity = '0';
         magicalSwordEl[0].style.opacity = '0';
-        magicalSwordEl[0].style.transform = 'rotate(0) scale(0)';
+        magicalSwordEl[0].style.transform = 'rotate(0) scale(0) translate(-270px, -270px)';
         sunGlassesEl[0].style.opacity = '0';
     }
 
