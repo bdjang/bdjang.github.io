@@ -62,6 +62,7 @@
 .magicalSword {
     left: -61px;
     top: 63px;
+    transform: translate(-200px, -250px);
     transition: opacity 1000ms ease, transform 500ms ease;
 }
 @keyframes swordGlow {
@@ -88,8 +89,8 @@
     100% { opacity: .75; }
 }
 @keyframes flameFlicker {
-    50% { opacity: 1; transform: scale(-1, 1); }
-    100% { opacity: 1; transform: scale(1, 1); }
+    50% { opacity: 1; transform: scale(-.8, .8); }
+    100% { opacity: 1; transform: scale(.8, .8); }
 }
 @media (prefers-reduced-motion: no-preference) {
     .flameArt {
