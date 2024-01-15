@@ -51,7 +51,8 @@
 .sunGlasses {
     left: 79px;
     top: 40px;
-    transition: opacity 750ms ease;
+    transition: opacity 750ms ease, transform 500ms ease;
+    transform: translate(0, -250px);
 }
 /* OLD MAN */
 .pixelPanel:hover .oldMan {
