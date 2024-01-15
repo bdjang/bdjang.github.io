@@ -11,13 +11,15 @@ export default function App() {
     const sunGlassesEl = document.getElementsByClassName("sunGlasses");
     function pixelClick() {
         magicalSwordEl[0].style.opacity = '1';
-        magicalSwordEl[0].style.transform = 'rotate(360deg) scale(1) translate(0)';
+        magicalSwordEl[0].style.transform = 'rotate(360deg) scale(1)';
         sunGlassesEl[0].style.opacity = '1';
+        sunGlassesEl[0].style.transform = 'translate(0)';
     }
     function pixelLeave() {
         magicalSwordEl[0].style.opacity = '0';
-        magicalSwordEl[0].style.transform = 'rotate(0) scale(0) translate(-270px, -270px)';
+        magicalSwordEl[0].style.transform = 'rotate(-90deg) scale(0.1)';
         sunGlassesEl[0].style.opacity = '0';
+        sunGlassesEl[0].style.transform = 'translate(0, -500px)';
     }
 
     return (
