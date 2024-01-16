@@ -17,7 +17,7 @@ export default function App() {
     }
     function pixelLeave() {
         magicalSwordEl[0].style.opacity = '0';
-        magicalSwordEl[0].style.transform = 'rotate(-90deg) scale(0.1)';
+        magicalSwordEl[0].style.transform = 'rotate(-135deg) scale(0.1)';
         sunGlassesEl[0].style.opacity = '0';
         sunGlassesEl[0].style.transform = 'translate(0, -500px)';
     }
