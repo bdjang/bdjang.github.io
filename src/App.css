@@ -68,10 +68,7 @@
 }
 @keyframes swordGlow {
     0% { filter: drop-shadow(0 0 1em #ffffff); }
-    25% { filter: drop-shadow(0 0 .75em #ffffff); }
-    50% { filter: drop-shadow(0 0 .5em #ffffff); }
-    75% { filter: drop-shadow(0 0 .25em #ffffff); }
-    100% { filter: drop-shadow(0 0 .1em #ffffff); }
+    100% { filter: drop-shadow(0 0 1em #f70104); }
 }
 /* FLAME */
 .flameArt {
