@@ -11,16 +11,22 @@ export default function App() {
     const sunGlassesEl = document.getElementsByClassName("sunGlasses");
     function pixelClick() {
         magicalSwordEl[0].style.opacity = '1';
-        magicalSwordEl[0].style.transform = 'scale(1)';
+        magicalSwordEl[0].style.transform = 'translate(0) rotate(360deg)';
         sunGlassesEl[0].style.opacity = '1';
         sunGlassesEl[0].style.transform = 'translate(0)';
     }
     function pixelLeave() {
         magicalSwordEl[0].style.opacity = '0';
-        magicalSwordEl[0].style.transform = 'scale(0) skew(70deg, 70deg) rotate(360deg)';
+        magicalSwordEl[0].style.transform = 'translate(-400px, -500px) rotate(0)';
         sunGlassesEl[0].style.opacity = '0';
         sunGlassesEl[0].style.transform = 'translate(0, -350px)';
     }
+    // function randomNum() {
+    //     const num = Math.floor(Math.random() * 5);
+    //     console.log(num);
+    //     const tt = document.getElementById("test");
+    //     tt.innerHTML = num;
+    // };
 
     return (
         <>
@@ -36,7 +42,8 @@ export default function App() {
             <hr />
             <div className="projectDesc">
                 <h2>Current Project: Pixel Art in Email</h2>
-                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that renders one way in light mode and another in dark mode. The email client hosting the pixel art will determine how it changes in dark mode.</p>
+                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The email client hosting the pixel art will determine how it changes in dark mode.</p>
+                {/* <p>IDEA: Generate random number, display different pixel art collages based on random number</p> */}
                 {/* <p>I look for ways to create art in unexpected places.</p> */}
             </div>
             {/* <p>Add some pixel art into your emails</p>
