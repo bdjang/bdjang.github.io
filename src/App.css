@@ -47,6 +47,9 @@
     position: absolute;
     transition: opacity 500ms ease;
 }
+.oldMan {
+    opacity: .05;
+}
 /* SUNGLASSES */
 .sunGlasses {
     left: 79px;
