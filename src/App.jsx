@@ -41,8 +41,9 @@ export default function App() {
             </div>
             <hr />
             <div className="projectDesc">
-                <h2>Current Project: Pixel Art in Email</h2>
-                <p><span>Inbox Pixel Artist</span>: Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The email client hosting the pixel art will determine how it changes in dark mode.</p>
+                {/* <h2>Current Project: Pixel Art in Email</h2> */}
+                <h2>Current Project: Dark Pixel Art</h2>
+                <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
                 {/* <p>IDEA: Generate random number, display different pixel art collages based on random number</p> */}
                 {/* <p>I look for ways to create art in unexpected places.</p> */}
             </div>
