@@ -31,7 +31,7 @@ export default function App() {
     return (
         <>
             <div className="titleText">
-                <h1 onMouseEnter={e => e.target.style.color = '#ff0000'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
+                <h1 onMouseEnter={e => e.target.style.color = '#f2f2f2'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
             </div>
             <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave} onTouchEnd={pixelLeave}>
                 <PixelArt />
@@ -42,8 +42,11 @@ export default function App() {
             <hr />
             <div className="projectDesc">
                 {/* <h2>Current Project: Pixel Art in Email</h2> */}
-                <h2>Current Project: Dark Pixel Art</h2>
+                <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
                 <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
+                <hr />
+                <h2>Completed Project: 📊 Email Chart Builder</h2>
+                <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 {/* <p>IDEA: Generate random number, display different pixel art collages based on random number</p> */}
                 {/* <p>I look for ways to create art in unexpected places.</p> */}
             </div>
