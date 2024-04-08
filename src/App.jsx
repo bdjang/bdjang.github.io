@@ -45,7 +45,7 @@ export default function App() {
                 <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
                 <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
                 <hr />
-                <h2>Completed Project: 📊 Email Chart Builder</h2>
+                <h2>Previous Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 {/* <p>IDEA: Generate random number, display different pixel art collages based on random number</p> */}
                 {/* <p>I look for ways to create art in unexpected places.</p> */}
