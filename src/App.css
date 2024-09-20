@@ -29,7 +29,7 @@
 .pixelPanel {
     cursor: pointer;
     display: inline-block;
-    height: 320px;
+    height: 250px;
     transition: filter 1000ms ease;
     -webkit-transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
     user-select: none;
@@ -42,30 +42,32 @@
 }
 
 /* PIXEL ART */
-.sunGlasses, .oldMan, .magicalSword, .flameArt {
+.sunGlasses, .oldMan, .asianMan, .magicalSword, .flameArt {
     opacity: 0;
     position: absolute;
     transition: opacity 500ms ease;
 }
-.oldMan {
+.oldMan, .asianMan {
     opacity: .05;
+    width: 100%;
 }
 /* SUNGLASSES */
 .sunGlasses {
-    left: 79px;
-    top: 40px;
+    left: 106px;
+    /* top: 28px; */
+    top: 56px;
     transition: opacity 750ms ease, transform 500ms ease;
     transform: translate(0, -250px);
 }
 /* OLD MAN */
-.pixelPanel:hover .oldMan {
+.pixelPanel:hover .oldMan, .pixelPanel:hover .asianMan {
     opacity: 1;
-    transition: opacity 1500ms ease;
+    transition: opacity 1000ms ease;
 }
 /* MAGICAL SWORD */
 .magicalSword {
-    left: -61px;
-    top: 63px;
+    /* top: 40px; */
+    top: 60px;
     transform: translate(-200px, -250px);
     transition: opacity 1000ms ease, transform 500ms ease;
 }
@@ -75,9 +77,10 @@
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 3em #fcb514);
-    left: 270px;
-    top: 118px;
+    filter: drop-shadow(0 0 3em #fcb514) drop-shadow(0 0 4em #fcb514) drop-shadow(0 0 5em #fcb514); /* 9.20.24: multiple drop-shadow values not working in iPhone Firefox even with -webkit- prefix */
+    left: 235px;
+    /* top: 90px; */
+    top: 110px;
     transition: opacity 250ms ease;
 }
 @keyframes flameGlow {
