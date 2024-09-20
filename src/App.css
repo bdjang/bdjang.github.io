@@ -77,20 +77,19 @@
 }
 /* FLAME */
 .flameArt {
-    filter: drop-shadow(0 0 3em #fcb514) drop-shadow(0 0 4em #fcb514) drop-shadow(0 0 5em #fcb514); /* 9.20.24: multiple drop-shadow values not working in iPhone Firefox even with -webkit- prefix */
     left: 235px;
     /* top: 90px; */
     top: 110px;
-    transition: opacity 250ms ease;
+    transition: opacity 250ms ease, filter 250ms ease;
 }
 @keyframes flameGlow {
-    0% { opacity: 1; }
-    15% { opacity: .85; }
-    25% { opacity: .75; }
-    35% { opacity: .65; }
-    50% { opacity: 1; }
-    75% { opacity: .7; }
-    100% { opacity: .75; }
+    0% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: 1; }
+    15% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .85; }
+    25% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .75; }
+    35% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .65; }
+    50% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: 1; }
+    75% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .7; }
+    100% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .75; }
 }
 @keyframes flameFlicker {
     50% { opacity: 1; transform: scale(-.8, .8); }
