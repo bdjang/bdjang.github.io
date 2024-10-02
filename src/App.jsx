@@ -47,7 +47,7 @@ export default function App() {
                 <h2>Past Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 <h2>Past Project: 📜 Email Pixel Alphabet</h2>
-                <p>A tool for creating pixelated letters for emails or digital art.</p>
+                <p>A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/email-pixel-alphabet">Visit project repo</a></p>
                 {/* <h2>pixelart.email</h2>
                 <p>art pieces that reflects the digital environment it is viewed in. the chosen environment for this art project is the email inbox.</p>
                 <p>art pieces that change based on the constraints of the digital environment it is viewed in. exploring the digital environment of the email inbox and finding ways to create unexpected art in the form of code-based pixel art. the inbox is my canvas</p>
