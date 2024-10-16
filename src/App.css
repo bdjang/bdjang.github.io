@@ -47,7 +47,11 @@
     position: absolute;
     transition: opacity 500ms ease;
 }
+.magicalSword table {
+    transition: filter 500ms ease;
+}
 .oldMan, .asianMan {
+    filter: blur(3px);
     opacity: .05;
     width: 100%;
 }
@@ -59,8 +63,9 @@
     transition: opacity 750ms ease, transform 500ms ease;
     transform: translate(0, -250px);
 }
-/* OLD MAN */
+/* OLD/ASIAN MAN */
 .pixelPanel:hover .oldMan, .pixelPanel:hover .asianMan {
+    filter: blur(0);
     opacity: 1;
     transition: opacity 1000ms ease;
 }
