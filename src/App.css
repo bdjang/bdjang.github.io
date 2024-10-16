@@ -45,7 +45,7 @@
 .sunGlasses, .oldMan, .asianMan, .magicalSword, .flameArt {
     opacity: 0;
     position: absolute;
-    transition: opacity 500ms ease;
+    transition: filter 500ms ease, opacity 500ms ease;
 }
 .magicalSword table {
     transition: filter 500ms ease;
