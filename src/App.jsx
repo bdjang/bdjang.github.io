@@ -9,24 +9,21 @@ export default function App() {
     const magicalSwordEl = document.getElementsByClassName("magicalSword");
     const flameArtEl = document.getElementsByClassName("flameArt");
     const sunGlassesEl = document.getElementsByClassName("sunGlasses");
+    const asianManEl = document.getElementsByClassName("asianMan");
     function pixelClick() {
         magicalSwordEl[0].style.opacity = '1';
         magicalSwordEl[0].style.transform = 'translate(0) rotate(360deg)';
+        setTimeout(() => { magicalSwordEl[0].children[0].style.filter = 'invert(100%)'; }, 1500);
         sunGlassesEl[0].style.opacity = '1';
         sunGlassesEl[0].style.transform = 'translate(0)';
     }
     function pixelLeave() {
         magicalSwordEl[0].style.opacity = '0';
         magicalSwordEl[0].style.transform = 'translate(-400px, -500px) rotate(0)';
+        magicalSwordEl[0].children[0].style.filter = 'invert(0%)';
         sunGlassesEl[0].style.opacity = '0';
         sunGlassesEl[0].style.transform = 'translate(0, -350px)';
     }
-    // function randomNum() {
-    //     const num = Math.floor(Math.random() * 5);
-    //     console.log(num);
-    //     const tt = document.getElementById("test");
-    //     tt.innerHTML = num;
-    // };
 
     return (
         <>
