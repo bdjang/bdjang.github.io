@@ -44,51 +44,13 @@ export default function App() {
             </div>
             <hr />
             <div className="projectDesc">
-                {/* <h2>Current Project: Pixel Art in Email</h2> */}
                 <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
                 <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
                 <h2>Past Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 <h2>Past Project: 📜 Email Pixel Alphabet</h2>
                 <p>A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/">Visit project repo</a></p>
-                <h2>Past Project: 🖌️ Email Pixel Canvas</h2>
-                <p>A tool for creating pixel art for HTML emails 📧. <a href="https://github.com/bdjang/">Visit project repo</a></p>
-                <h2>Past Project: <img className="pixelLibraryIcon" src="https://github.com/user-attachments/assets/7bf39511-eb63-47ee-acc4-94d8fd51b0b9" /> Email Pixel Library</h2>
-                <p>The Email Pixel Library is a web-based tool designed to manage pixel art for email. It offers a user-friendly interface for selecting pixel art sizes and previewing for dark/light modes. <a href="https://github.com/bdjang/">Visit project repo</a></p>
-                {/* <h2>pixelart.email</h2>
-                <p>art pieces that reflects the digital environment it is viewed in. the chosen environment for this art project is the email inbox.</p>
-                <p>art pieces that change based on the constraints of the digital environment it is viewed in. exploring the digital environment of the email inbox and finding ways to create unexpected art in the form of code-based pixel art. the inbox is my canvas</p>
-                <div>
-                    <ul>
-                        <li>the inbox is the canvas</li>
-                        <li>i explore the digital environment of the email inbox with all its constraints, limitations, and boundaries</li>
-                        <li>i look for ways to create unexpected art in the form of code-based pixel art</li>
-                        <li>these art pieces change based on the inbox environment they are viewed in</li>
-                    </ul>
-                </div>
-                <h2>graffiti.email</h2>
-                <p>unsanctioned inbox art</p> */}
-                {/* <p>I look for ways to create art in unexpected places.</p> */}
             </div>
-            {/* <p>Add some pixel art into your emails</p>
-            <ul>
-                <li>Code-based Pixel Art</li>
-                <li>No Images</li>
-                <li>Dark Mode Compatible</li>
-                <li>Make It Yours</li>
-            </ul>
-            <h2>Pros</h2>
-            <ul>
-                <li>Comes in various sizes</li>
-                <li>Adapts to dark mode based on the email client</li>
-                <li>Makes your email signature unique</li>
-            </ul>
-            <h2>Cons</h2>
-            <ul>
-                <li>Limit to X pixel art per email. Using more can lead to clipping issues</li>
-                <li>Simpler is better. Complex and detailed pixel art is difficult to produce in email</li>
-                <li>Email clients could change how they render email code. This could impact how pixel art is displayed</li>
-            </ul> */}
         </>
     )
 }
