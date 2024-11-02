@@ -6,10 +6,11 @@ import PixelArt from './components/PixelArt'
 
 export default function App() {
     
-    const magicalSwordEl = document.getElementsByClassName("magicalSword");
-    const flameArtEl = document.getElementsByClassName("flameArt");
-    const sunGlassesEl = document.getElementsByClassName("sunGlasses");
     const asianManEl = document.getElementsByClassName("asianMan");
+    const flameArtEl = document.getElementsByClassName("flameArt");
+    const magicalSwordEl = document.getElementsByClassName("magicalSword");
+    const pixelPanelEl = document.getElementsByClassName("pixelPanel");
+    const sunGlassesEl = document.getElementsByClassName("sunGlasses");
     function pixelClick() {
         magicalSwordEl[0].style.opacity = '1';
         magicalSwordEl[0].style.transform = 'translate(0) rotate(360deg)';
@@ -23,6 +24,11 @@ export default function App() {
         magicalSwordEl[0].children[0].style.filter = 'invert(0%)';
         sunGlassesEl[0].style.opacity = '0';
         sunGlassesEl[0].style.transform = 'translate(0, -350px)';
+        pixelPanelEl[0].style.filter = '';
+    }
+    function pixelShadow() {
+        const ranBoxShadow1 = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+        pixelPanelEl[0].style.filter = 'drop-shadow(0 0 2em ' + ranBoxShadow1 + ')';
     }
 
     return (
@@ -30,7 +36,7 @@ export default function App() {
             <div className="titleText">
                 <h1 onMouseEnter={e => e.target.style.color = '#f2f2f2'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
             </div>
-            <div className="pixelPanel" onClick={pixelClick} onMouseLeave={pixelLeave} onTouchEnd={pixelLeave}>
+            <div className="pixelPanel" onClick={pixelClick} onMouseOver={pixelShadow} onMouseLeave={pixelLeave} onTouchEnd={pixelLeave}>
                 <PixelArt />
             </div>
             <div className="introText">
@@ -44,7 +50,11 @@ export default function App() {
                 <h2>Past Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 <h2>Past Project: 📜 Email Pixel Alphabet</h2>
-                <p>A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/email-pixel-alphabet">Visit project repo</a></p>
+                <p>A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/">Visit project repo</a></p>
+                <h2>Past Project: 🖌️ Email Pixel Canvas</h2>
+                <p>A tool for creating pixel art for HTML emails 📧. <a href="https://github.com/bdjang/">Visit project repo</a></p>
+                <h2>Past Project: <img className="pixelLibraryIcon" src="https://github.com/user-attachments/assets/7bf39511-eb63-47ee-acc4-94d8fd51b0b9" /> Email Pixel Library</h2>
+                <p>The Email Pixel Library is a web-based tool designed to manage pixel art for email. It offers a user-friendly interface for selecting pixel art sizes and previewing for dark/light modes. <a href="https://github.com/bdjang/">Visit project repo</a></p>
                 {/* <h2>pixelart.email</h2>
                 <p>art pieces that reflects the digital environment it is viewed in. the chosen environment for this art project is the email inbox.</p>
                 <p>art pieces that change based on the constraints of the digital environment it is viewed in. exploring the digital environment of the email inbox and finding ways to create unexpected art in the form of code-based pixel art. the inbox is my canvas</p>
