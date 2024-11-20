@@ -24,7 +24,10 @@
 .projectDesc p {
     color: #848d97;
 }
-
+.projectDesc .pixelLibraryIcon {
+    vertical-align: middle;
+    width: 22px;
+}
 /* PIXEL PANEL */
 .pixelPanel {
     cursor: pointer;
@@ -37,7 +40,6 @@
     width: 320px;
 }
 .pixelPanel:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
     transition: filter 1000ms ease;
 }
 
@@ -83,18 +85,17 @@
 /* FLAME */
 .flameArt {
     left: 235px;
-    /* top: 90px; */
     top: 110px;
     transition: opacity 250ms ease, filter 250ms ease;
 }
 @keyframes flameGlow {
-    0% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: 1; }
-    15% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .85; }
-    25% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .75; }
-    35% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .65; }
-    50% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: 1; }
-    75% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .7; }
-    100% { filter: drop-shadow(0 0 2em #fcb514) drop-shadow(0 0 3em #ffffff); opacity: .75; }
+    0% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: 1; }
+    15% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .85; }
+    25% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .75; }
+    35% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .65; }
+    50% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: 1; }
+    75% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .7; }
+    100% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .75; }
 }
 @keyframes flameFlicker {
     50% { opacity: 1; transform: scale(-.8, .8); }
