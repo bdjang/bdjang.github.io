@@ -45,7 +45,7 @@ export default function App() {
             <hr />
             <div className="projectDesc">
                 <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
-                <p>Light and dark mode art.</p>
+                <p>Light & dark mode art.</p>
                 <h2>Past Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 <h2>Past Project: 📜 Email Pixel Alphabet</h2>
