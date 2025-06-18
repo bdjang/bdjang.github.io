@@ -45,7 +45,7 @@ export default function App() {
             <hr />
             <div className="projectDesc">
                 <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
-                <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
+                <p>Light and dark mode art.</p>
                 <h2>Past Project: 📊 Email Chart Builder</h2>
                 <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
                 <h2>Past Project: 📜 Email Pixel Alphabet</h2>
