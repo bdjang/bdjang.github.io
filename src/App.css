@@ -1,3 +1,5 @@
+/* APP STYLES */
+
 #root {
     max-width: 1280px;
     margin: 0 auto;
@@ -28,89 +30,6 @@
     vertical-align: middle;
     width: 22px;
 }
-/* PIXEL PANEL */
-.pixelPanel {
-    cursor: pointer;
-    display: inline-block;
-    height: 250px;
-    transition: filter 1000ms ease;
-    -webkit-transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
-    user-select: none;
-    -webkit-user-select: none;
-    width: 320px;
-}
-.pixelPanel:hover {
-    transition: filter 1000ms ease;
-}
-
-/* PIXEL ART */
-.sunGlasses, .oldMan, .asianMan, .magicalSword, .flameArt {
-    opacity: 0;
-    position: absolute;
-    transition: filter 500ms ease, opacity 500ms ease;
-}
-.magicalSword table {
-    transition: filter 500ms ease;
-}
-.oldMan, .asianMan {
-    opacity: .05;
-    width: 100%;
-}
-/* SUNGLASSES */
-.sunGlasses {
-    left: 106px;
-    /* top: 28px; */
-    top: 56px;
-    transition: opacity 750ms ease, transform 500ms ease;
-    transform: translate(0, -250px);
-}
-/* OLD/ASIAN MAN */
-.pixelPanel:hover .oldMan, .pixelPanel:hover .asianMan {
-    opacity: 1;
-    transition: opacity 1000ms ease;
-}
-/* MAGICAL SWORD */
-.magicalSword {
-    /* top: 40px; */
-    top: 60px;
-    transform: translate(-200px, -250px);
-    transition: opacity 1000ms ease, transform 500ms ease;
-}
-@keyframes swordGlow {
-    0% { filter: drop-shadow(0 0 1em #ffffff); }
-    100% { filter: drop-shadow(0 0 1em #f70104); }
-}
-/* FLAME */
-.flameArt {
-    left: 235px;
-    top: 110px;
-    transition: opacity 250ms ease, filter 250ms ease;
-}
-@keyframes flameGlow {
-    0% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: 1; }
-    15% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .85; }
-    25% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .75; }
-    35% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .65; }
-    50% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: 1; }
-    75% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .7; }
-    100% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .75; }
-}
-@keyframes flameFlicker {
-    50% { opacity: 1; transform: scale(-.8, .8); }
-    100% { opacity: 1; transform: scale(.8, .8); }
-}
-@media (prefers-reduced-motion: no-preference) {
-    .flameArt {
-        animation: flameFlicker 200ms linear infinite;
-        animation-timing-function: steps(1, start);
-    }
-    .flameArt table {
-        animation: flameGlow 1500ms ease-in-out infinite alternate;
-    }
-    .magicalSword {
-        animation: swordGlow 1500ms linear infinite alternate;
-    }
-}
 
 /* MOBILE STYLES */
 @media screen and (max-width: 450px) {
@@ -118,9 +37,3 @@
         font-size: 40px;
     }
 }
-
-/* .namePix {
-    height: 30px;
-    width: 200px;
-    margin: 0 auto 80px;
-} */
