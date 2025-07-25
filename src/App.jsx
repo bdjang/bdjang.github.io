@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import Button from './components/Button'
 import PixelArt from './components/PixelArt'
 
 export default function App() {
     return (
         <>
             <div className="titleText">
-                <h1 onMouseEnter={e => e.target.style.color = '#f2f2f2'} onMouseLeave={e => e.target.style.color = '#f2f2f2'}>bdjang.github.io</h1>
+                <h1>bdjang.github.io</h1>
             </div>
             <PixelArt />
             <div className="introText">
