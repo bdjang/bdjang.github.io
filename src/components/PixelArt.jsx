@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import {asianMan as asianManClass} from "./PixelArt.module.css"
-import {magicalSword as magicalSwordClass} from "./PixelArt.module.css"
-import {flameArt as flameArtClass} from "./PixelArt.module.css"
-import {sunGlasses as sunGlassesClass} from "./PixelArt.module.css"
-import {pixelPanel as pixelPanelClass} from "./PixelArt.module.css"
+import { asianMan as asianManClass } from "./PixelArt.module.css"
+import { magicalSword as magicalSwordClass } from "./PixelArt.module.css"
+import { flameArt as flameArtClass } from "./PixelArt.module.css"
+import { sunGlasses as sunGlassesClass } from "./PixelArt.module.css"
+import { pixelPanel as pixelPanelClass } from "./PixelArt.module.css"
 
 export default function PixelArt() {
     const pixelPanelRef = useRef(); // Use a React ref to access and modify the DOM element’s style.
