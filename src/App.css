@@ -1,12 +1,10 @@
-/* APP STYLES */
-
+/* APP CSS STYLES */
 #root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
 }
-
 /* TITLE TEXT */
 .titleText h1 {
     margin: 34px 0 60px 0;
@@ -30,7 +28,6 @@
     vertical-align: middle;
     width: 22px;
 }
-
 /* MOBILE STYLES */
 @media screen and (max-width: 450px) {
     .titleText h1 {
