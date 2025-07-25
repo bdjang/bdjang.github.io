@@ -1,5 +1,4 @@
-/* GLOBAL STYLES */
-
+/* GLOBAL CSS STYLES */
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -14,7 +13,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 a {
     font-weight: 500;
     color: #646cff;
@@ -23,7 +21,6 @@ a {
 a:hover {
     color: #535bf2;
 }
-
 body {
     background-color: #0d1117;
     color: #e6edf3;
@@ -33,13 +30,11 @@ body {
     min-width: 320px;
     min-height: 100vh;
 }
-
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
     transition: color 1500ms ease;
 }
-
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
