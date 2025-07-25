@@ -1,5 +1,6 @@
 import './App.css'
 import PixelArt from './components/PixelArt'
+import Project from './components/Project'
 
 export default function App() {
     return (
@@ -13,12 +14,21 @@ export default function App() {
             </div>
             <hr />
             <div className="projectDesc">
-                <h2>Current Working Project: 🌗 Dark Mode Pixel Art</h2>
-                <p>Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.</p>
-                <h2>Past Project: 📊 Email Chart Builder</h2>
-                <p>A tool for building bar charts for HTML email templates. <a href="https://charts.email/">Visit project site</a></p>
-                <h2>Past Project: 📜 Email Pixel Alphabet</h2>
-                <p>A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/">Visit project repo</a></p>
+                <Project projectTitle="Current Working Project: 🌗 Dark Mode Pixel Art" projectDescription={ // Pass the link as a prop and compose the description in JSX
+                    <>
+                        Using the inbox as my canvas, I create code-based pixel art that displays one way in light mode and another in dark mode. The pixel art adjusts based on the email client's settings in dark mode.
+                    </>
+                } />
+                <Project projectTitle="Past Project: 📊 Email Chart Builder" projectDescription={
+                    <>
+                        A tool for building bar charts for HTML email templates. <a href="https://charts.email/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                    </>
+                } />
+                <Project projectTitle="Past Project: 📜 Email Pixel Alphabet" projectDescription={
+                    <>
+                        A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/" target="_blank" rel="noopener noreferrer">Visit project repo</a>
+                    </>
+                } />
             </div>
         </>
     )
