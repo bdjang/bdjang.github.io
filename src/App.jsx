@@ -1,13 +1,12 @@
 import './App.css'
 import PixelArt from './components/PixelArt'
 import Project from './components/Project'
+import PixelName from './components/PixelName'
 
 export default function App() {
     return (
         <>
-            <div className="titleText">
-                <h1>bdjang.github.io</h1>
-            </div>
+            <PixelName />
             <PixelArt />
             <div className="introText">
                 <h2>I am a web tinkerer. I experiment with code. I sometimes create digital art.</h2>
