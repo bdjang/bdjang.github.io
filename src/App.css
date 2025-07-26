@@ -13,21 +13,6 @@
 .introText h2 {
     margin: 60px 0 20px 0;
 }
-/* PROJECT DESCRIPTION TEXT */
-.projectDesc {
-    max-width: 600px;
-    margin: 0 auto;
-}
-.projectDesc p span {
-    font-weight: 600;
-}
-.projectDesc p {
-    color: #848d97;
-}
-.projectDesc .pixelLibraryIcon {
-    vertical-align: middle;
-    width: 22px;
-}
 /* MOBILE STYLES */
 @media screen and (max-width: 450px) {
     .titleText h1 {
