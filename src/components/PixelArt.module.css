@@ -3,8 +3,8 @@
 /* PIXEL PANEL */
 .pixelPanel {
     cursor: pointer;
-    display: inline-block;
     height: 250px;
+    margin: 0 auto;
     transition: filter 1000ms ease;
     -webkit-transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
     user-select: none;
