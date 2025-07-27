@@ -12,7 +12,7 @@
     width: 320px;
 }
 .pixelPanel:hover {
-    transition: filter 1000ms ease;
+    transition: filter 1000ms linear;
 }
 /* PIXEL ART */
 .sunGlasses, .pixelMan, .magicalSword, .flameArt {
