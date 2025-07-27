@@ -21,7 +21,7 @@
 /* MOBILE STYLES */
 @media screen and (max-width: 825px) {
     .namePix div table tr td {
-        height: 2px;
-        width: 2px;
+        height: 1px;
+        width: 1px;
     }
 }
