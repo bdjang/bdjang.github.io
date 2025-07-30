@@ -15,7 +15,7 @@
     transition: filter 1000ms linear;
 }
 /* PIXEL ART */
-.sunGlasses, .pixelMan, .magicalSword, .flameArt {
+.mageHat, .pixelMan, .magicalSword, .flameArt {
     opacity: 0;
     position: absolute;
     transition: filter 500ms ease, opacity 500ms ease;
@@ -28,12 +28,11 @@
     width: 100%;
 }
 /* SUNGLASSES */
-.sunGlasses {
-    left: 106px;
-    /* top: 28px; */
-    top: 56px;
+.mageHat {
+    left: 90px;
+    top: -45px;
     transition: opacity 750ms ease, transform 500ms ease;
-    transform: translate(0, -250px);
+    transform: translate(0, -500px);
 }
 /* PIXEL MAN */
 .pixelPanel:hover .pixelMan {
