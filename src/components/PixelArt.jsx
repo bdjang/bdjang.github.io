@@ -5,7 +5,7 @@ import { flameArt as flameArtClass } from "./PixelArt.module.css"
 import { mageHat as mageHatClass } from "./PixelArt.module.css"
 import { pixelPanel as pixelPanelClass } from "./PixelArt.module.css"
 
-export default function PixelArt() {
+export default function PixelArt({ color }) {
     const pixelPanelRef = useRef(); // Use a React ref to access and modify the DOM element’s style.
     const magicalSwordRef = useRef();
     const mageHatRef = useRef();
@@ -29,10 +29,10 @@ export default function PixelArt() {
         intervalId = null;
     }
     function pixelShadow() {
-        pixelPanelRef.current.style.filter = 'drop-shadow(0 0 2em #FF0000)';
+        pixelPanelRef.current.style.filter = 'drop-shadow(0 0 2em ' + color +')';
         intervalId = setInterval(() => {
-            const ranBoxShadow1 = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
-            pixelPanelRef.current.style.filter = 'drop-shadow(0 0 2em ' + ranBoxShadow1 + ')';
+            color = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+            pixelPanelRef.current.style.filter = 'drop-shadow(0 0 2em ' + color + ')';
         }, 2500);
     }
     return (
