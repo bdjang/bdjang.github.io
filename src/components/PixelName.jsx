@@ -1,15 +1,16 @@
 import { useRef } from "react";
 import { namePix as namePixClass } from "./PixelName.module.css"
 
-export default function PixelName() {
+export default function PixelName({ color }) {
     const pixelNameRef = useRef(); // Use a React ref to access and modify the DOM element’s style.
 
     function pixelColorChange() {
-        const ranBoxShadow1 = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
         const pixelNameTd = pixelNameRef.current.querySelectorAll('td');
         pixelNameTd.forEach((td) => {
             td.addEventListener('mouseover', () => {
-                td.bgcolor = ranBoxShadow1;
+                if (td.bgColor) {
+                    td.bgColor = color;
+                }
             });
         })
     }
