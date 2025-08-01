@@ -1,13 +1,17 @@
 import './App.css'
+import { useState } from "react";
 import PixelArt from './components/PixelArt'
 import Project from './components/Project'
 import PixelName from './components/PixelName'
 
 export default function App() {
+    const ranBoxShadow = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+    const [pixelColor, setPixelColor] = useState(ranBoxShadow);
+
     return (
         <>
-            <PixelName />
-            <PixelArt />
+            <PixelName color={pixelColor} />
+            <PixelArt color={pixelColor} />
             <div className="introText">
                 <h2>I am a web tinkerer. I experiment with code. I sometimes create digital art.</h2>
             </div>
