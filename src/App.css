@@ -9,3 +9,7 @@
 .introText h2 {
     margin: 60px 0 20px 0;
 }
+*::selection {
+    background-color: #E40909;
+    color: #FFFFFF;
+}
