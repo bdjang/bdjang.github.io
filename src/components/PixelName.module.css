@@ -17,11 +17,12 @@
 .namePix div table tr td {
     height: 6px;
     width: 6px;
+    -webkit-transition: background-color 175ms ease-out; -ms-transition: background-color 175ms ease-out; -moz-transition: background-color 175ms ease-out; transition: background-color 175ms ease-out;
 }
 /* MOBILE STYLES */
 @media screen and (max-width: 825px) {
     .namePix div table tr td {
-        height: 1px;
-        width: 1px;
+        height: 1.35px;
+        width: 1.35px;
     }
 }
