@@ -5,13 +5,15 @@ import Project from './components/Project'
 import PixelName from './components/PixelName'
 
 export default function App() {
-    const ranBoxShadow = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
-    const [pixelColor, setPixelColor] = useState(ranBoxShadow);
+    const ranColorOne = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+    const ranColorTwo = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+    const [pixelColorOne, setPixelColorOne] = useState(ranColorOne);
+    const [pixelColorTwo, setPixelColorTwo] = useState(ranColorTwo);
 
     return (
         <>
-            <PixelName color={pixelColor} />
-            <PixelArt color={pixelColor} />
+            <PixelName colorOne={pixelColorOne} colorTwo={pixelColorTwo} />
+            <PixelArt colorOne={pixelColorOne} colorTwo={pixelColorTwo} />
             <div className="introText">
                 <h2>I am a web tinkerer. I experiment with code. I sometimes create digital art.</h2>
             </div>
