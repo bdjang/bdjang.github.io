@@ -1,15 +1,18 @@
 import { useRef } from "react";
 import { namePix as namePixClass } from "./PixelName.module.css"
 
-export default function PixelName({ color }) {
+export default function PixelName({ colorOne, colorTwo }) {
     const pixelNameRef = useRef(); // Use a React ref to access and modify the DOM element’s style.
 
+    // 8.1.25: Avoid direct DOM manipulation in React. Using 'addEventListener' breaks React's update cycle - React does not know which elements to update when the prop changes. Use the following instead: <td bgcolor={colorOne}></td>
     function pixelColorChange() {
         const pixelNameTd = pixelNameRef.current.querySelectorAll('td');
         pixelNameTd.forEach((td) => {
             td.addEventListener('mouseover', () => {
-                if (td.bgColor) {
-                    td.bgColor = color;
+                if (td.bgColor == "#FFFFFF") {
+                    td.bgColor = colorOne;
+                } else if (td.bgColor == false) {
+                    td.bgColor = colorTwo;
                 }
             });
         })
