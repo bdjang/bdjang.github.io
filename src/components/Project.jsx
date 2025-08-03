@@ -1,4 +1,4 @@
-import { projectDesc as projectDescClass } from "./Project.module.css"
+import { projectDesc as projectDescClass } from "./Project.module.scss"
 
 export default function Project(props) {
     return (

@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { useState } from "react";
 import PixelArt from './components/PixelArt'
 import Project from './components/Project'

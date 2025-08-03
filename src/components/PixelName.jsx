@@ -1,4 +1,4 @@
-import { namePix as namePixClass } from "./PixelName.module.css"
+import { namePix as namePixClass } from "./PixelName.module.scss"
 
 export default function PixelName({ colorOne, colorTwo }) { // Pass in colorOne and colorTwo props into component, update functions to use both props
 
