@@ -2,8 +2,14 @@
 
 /* PROJECT DESCRIPTION TEXT */
 .projectDesc {
-    max-width: 600px;
-    margin: 0 auto;
+    background-color: #1f1f1f;
+    border: 1px solid red;
+    max-width: 400px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    vertical-align: top;
 }
 .projectDesc p span {
     font-weight: 600;
