@@ -5,7 +5,7 @@ import { flameArt as flameArtClass } from "./PixelArt.module.css"
 import { mageHat as mageHatClass } from "./PixelArt.module.css"
 import { pixelPanel as pixelPanelClass } from "./PixelArt.module.css"
 
-export default function PixelArt({ colorOne }) {
+export default function PixelArt({ colorOne }) { // Pass colorOne prop into component and update functions to use this prop
     const pixelPanelRef = useRef(); // Use a React ref to access and modify the DOM element’s style.
     const magicalSwordRef = useRef();
     const mageHatRef = useRef();

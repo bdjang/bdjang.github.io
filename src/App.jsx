@@ -5,6 +5,7 @@ import Project from './components/Project'
 import PixelName from './components/PixelName'
 
 export default function App() {
+    // Initialize ranColorOne and ranColorTwo React state variables, pass current values as props to PixelName and PixelArt components
     const ranColorOne = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
     const ranColorTwo = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
     const [pixelColorOne, setPixelColorOne] = useState(ranColorOne);
