@@ -9,14 +9,8 @@
     max-width: 300px;
     padding: 20px;
     vertical-align: top;
-}
-.projectDesc p span {
-    font-weight: 600;
-}
-.projectDesc p {
-    color: #848d97;
-}
-.projectDesc .pixelLibraryIcon {
-    vertical-align: middle;
-    width: 22px;
+    p {
+        color: #848d97;
+        text-align: left;
+    }
 }
