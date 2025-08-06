@@ -1,23 +1,20 @@
 .namePix {
     margin: 34px 0 60px 0;
-}
-.namePix div {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-}
-.namePix div:hover {
-    cursor: pointer;
-}
-.namePix div table {
-    border-spacing: .5px;
-    border-collapse: separate;
-    font-size: 0;
-}
-.namePix div table tr td {
-    height: 6px;
-    width: 6px;
-    -webkit-transition: background-color 175ms ease-out; -ms-transition: background-color 175ms ease-out; -moz-transition: background-color 175ms ease-out; transition: background-color 175ms ease-out;
+    div {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        table {
+            border-spacing: .5px;
+            border-collapse: separate;
+            font-size: 0;
+            tr td {
+                height: 6px;
+                width: 6px;
+                -webkit-transition: background-color 175ms ease-out; -ms-transition: background-color 175ms ease-out; -moz-transition: background-color 175ms ease-out; transition: background-color 175ms ease-out;
+            }
+        }
+    }
 }
 /* MOBILE STYLES */
 @media screen and (max-width: 825px) {
