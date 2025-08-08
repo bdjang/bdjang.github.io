@@ -1,7 +1,7 @@
 /* PROJECT COMPONENT STYLES */
 
 /* PROJECT DESCRIPTION TEXT */
-.projectDesc {
+div.projectDesc {
     background-color: #1f1f1f;
     display: inline-block;
     height: 300px;
@@ -9,6 +9,9 @@
     max-width: 300px;
     padding: 20px;
     vertical-align: top;
+    h2 {
+        margin: 0;
+    }
     p {
         color: #848d97;
         text-align: left;
