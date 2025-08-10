@@ -1,8 +1,8 @@
 import './App.scss'
 import { useState } from "react";
-import PixelArt from './components/PixelArt'
-import Project from './components/Project'
-import PixelName from './components/PixelName'
+import PixelArt from './components/PixelArt.js'
+import Project from './components/Project.js'
+import PixelName from './components/PixelName.js'
 
 export default function App() {
     // Initialize ranColorOne and ranColorTwo React state variables, pass current values as props to PixelName and PixelArt components
