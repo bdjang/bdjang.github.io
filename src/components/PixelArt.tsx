@@ -15,11 +15,10 @@ const bgColorTen = '#F93801';
 const bgColorEleven = '#FEA346';
 
 export default function PixelArt({ colorOne }) { // Pass colorOne prop into component and update functions to use this prop
-    const pixelPanelRef = useRef<HTMLDivElement>(null);; // Use a React ref to access and modify the DOM element’s style.
-    const magicalSwordRef = useRef<HTMLDivElement>(null);;
-    const mageHatRef = useRef<HTMLDivElement>(null);;
-    // let intervalId;
-    let intervalId: NodeJS.Timeout | null;
+    const pixelPanelRef = useRef<HTMLDivElement>(null); // Use a React ref to access and modify the DOM element’s style.
+    const magicalSwordRef = useRef<HTMLDivElement>(null);
+    const mageHatRef = useRef<HTMLDivElement>(null);
+    let intervalId: number | null; // Declare variable to hold either number of null type
 
     function pixelClick() {
         if (magicalSwordRef.current) {
