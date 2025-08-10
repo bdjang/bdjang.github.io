@@ -4,7 +4,12 @@ import styles from './PixelName.module.scss'
 const borderNum = 0;
 const pixelInitialColor = 'rgb(255, 255, 255)';
 
-export default function PixelName({ colorOne, colorTwo }) { // Pass in colorOne and colorTwo props into component, update functions to use both props
+type PixelNameProps = { // Props type definition
+    colorOne: string;
+    colorTwo: string;
+}
+
+export default function PixelName({ colorOne, colorTwo }: PixelNameProps) { // Pass in colorOne and colorTwo props into component, update functions to use both props
 
     // 8.1.25: Avoid direct DOM manipulation in React. Using 'addEventListener' breaks React's control over the DOM - React does not know which elements to update when the prop changes. Use the following instead: <td bgcolor={colorOne}></td>
     // 8.2.25: Create changeColor function, pass function as a prop to all td cells using the onMouseEnter React synthetic event handler prop attribute

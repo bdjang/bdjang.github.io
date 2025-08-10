@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import styles from './PixelArt.module.scss';
 
+// Internal constants used within this component, does not need to be part of the props type
 const borderNum = 0;
 const bgColorOne = '#331B03';
 const bgColorTwo = '#FFB64D';
@@ -14,7 +15,12 @@ const bgColorNine = '#F38A0C';
 const bgColorTen = '#F93801';
 const bgColorEleven = '#FEA346';
 
-export default function PixelArt({ colorOne }) { // Pass colorOne prop into component and update functions to use this prop
+type PixelArtProps = { // Props type definition
+    colorOne: string;
+    colorTwo: string;
+}
+
+export default function PixelArt({ colorOne }: PixelArtProps) { // Pass colorOne prop into component and update functions to use this prop
     const pixelPanelRef = useRef<HTMLDivElement>(null); // Use a React ref to access and modify the DOM element’s style.
     const magicalSwordRef = useRef<HTMLDivElement>(null);
     const mageHatRef = useRef<HTMLDivElement>(null);
