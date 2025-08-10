@@ -1,8 +1,8 @@
-import styles from "./PixelName.module.scss"
+import styles from './PixelName.module.scss'
 
 // 8.10.25: Do need to explicitly set types for these variables. TypeScript will automatically infer types
-const pixelInitialColor = "rgb(255, 255, 255)";
 const borderNum = 0;
+const pixelInitialColor = 'rgb(255, 255, 255)';
 
 export default function PixelName({ colorOne, colorTwo }) { // Pass in colorOne and colorTwo props into component, update functions to use both props
 
