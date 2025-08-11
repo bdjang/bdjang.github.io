@@ -18,8 +18,10 @@ export default function PixelName({ colorOne, colorTwo }: PixelNameProps) { // P
         if (e.target instanceof HTMLTableCellElement) {
             if (e.target.style.backgroundColor == pixelInitialColor) {
                 e.target.style.backgroundColor = colorOne;
+                e.target.style.borderRadius = '50%';
             } else if (e.target.style.backgroundColor == pixelEmptyColor) {
                 e.target.style.backgroundColor = colorTwo;
+                e.target.style.borderRadius = '50%';
             }
         }
     }
