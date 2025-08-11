@@ -8,14 +8,73 @@
             border-spacing: .5px;
             border-collapse: separate;
             font-size: 0;
-            tr td {
-                height: 6px;
-                width: 6px;
-                -webkit-transition: background-color 175ms ease-out; -ms-transition: background-color 175ms ease-out; -moz-transition: background-color 175ms ease-out; transition: background-color 175ms ease-out;
+            tr {
+                td {
+                    height: 6px;
+                    width: 6px;
+                    -webkit-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -ms-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -moz-transition: background-color 175ms ease-out, border-radius 250ms ease-out; transition: background-color 175ms ease-out, border-radius 250ms ease-out;
+                }
+                &:nth-child(n + 1) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 1000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 6500ms ease;
+                    }
+                }
+                &:nth-child(n + 2) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 2000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 5500ms ease;
+                    }
+                }
+                &:nth-child(n + 3) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 3000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 4500ms ease;
+                    }
+                }
+                &:nth-child(n + 4) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 4000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 3500ms ease;
+                    }
+                }
+                &:nth-child(n + 5) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 5000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 2500ms ease;
+                    }
+                }
+                &:nth-child(n + 6) {
+                    td:nth-child(even) {
+                        animation: pixelTitleAnim 6000ms ease;
+                    }
+                    td:nth-child(odd) {
+                        animation: pixelTitleAnim 1500ms ease;
+                    }
+                }
             }
         }
     }
 }
+@keyframes pixelTitleAnim {
+    0% {
+        transform: rotateY(90deg) scale(-1, -1) translate(0, 1000px);
+    }
+    100% {
+        transform: rotateY(0deg) scale(1, 1) translate(0, 0);
+    }
+}
+
 /* MOBILE STYLES */
 @media screen and (max-width: 825px) {
     .namePix div table tr td {
