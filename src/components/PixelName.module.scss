@@ -16,62 +16,72 @@
                 }
                 &:nth-child(n + 1) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 1000ms ease;
+                        animation: pixelDropAnim 1000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 6500ms ease;
+                        animation: pixelDropAnim 6500ms ease;
                     }
                 }
                 &:nth-child(n + 2) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 2000ms ease;
+                        animation: pixelDropAnim 2000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 5500ms ease;
+                        animation: pixelDropAnim 5500ms ease;
                     }
                 }
                 &:nth-child(n + 3) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 3000ms ease;
+                        animation: pixelDropAnim 3000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 4500ms ease;
+                        animation: pixelDropAnim 4500ms ease;
                     }
                 }
                 &:nth-child(n + 4) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 4000ms ease;
+                        animation: pixelDropAnim 4000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 3500ms ease;
+                        animation: pixelDropAnim 3500ms ease;
                     }
                 }
                 &:nth-child(n + 5) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 5000ms ease;
+                        animation: pixelDropAnim 5000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 2500ms ease;
+                        animation: pixelDropAnim 2500ms ease;
                     }
                 }
                 &:nth-child(n + 6) {
                     td:nth-child(even) {
-                        animation: pixelTitleAnim 6000ms ease;
+                        animation: pixelDropAnim 6000ms ease;
                     }
                     td:nth-child(odd) {
-                        animation: pixelTitleAnim 1500ms ease;
+                        animation: pixelDropAnim 1500ms ease;
                     }
                 }
             }
         }
     }
 }
-@keyframes pixelTitleAnim {
+@keyframes pixelDropAnim {
     0% {
-        transform: rotateY(90deg) scale(-1, -1) translate(0, 1000px);
+        border-radius: 50%;
+        transform: rotateY(720deg) scale(-3, -3) translate(0, 1000px);
     }
     100% {
+        border-radius: 0%;
         transform: rotateY(0deg) scale(1, 1) translate(0, 0);
+    }
+}
+@keyframes pixelSliceAnim {
+    0% {
+        transform: scale(-2, -2) skew(45deg, 45deg);
+    }
+    100% {
+        transform: scale(1, 1) skew(0deg, 0deg);
     }
 }
 
