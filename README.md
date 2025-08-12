@@ -41,13 +41,13 @@ declare module "*.module.scss" {
 }
 ```
 
-8. Then in the React component, update the import statement to use the default export:
+8. Update the import statement to use the default export for each React component:
 
 ```TypeScript
 import styles from "./Project.module.scss";
 ```
 
-9. Then update the `className` value:
+9. Update the `className` value:
 
 ```HTML
 <div className={styles.projectDesc}>
@@ -55,3 +55,5 @@ import styles from "./Project.module.scss";
     <p>{props.projectDescription}</p>
 </div>
 ```
+
+10. Include `global.d.ts` in `tsconfig.json` file
