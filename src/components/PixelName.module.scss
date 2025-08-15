@@ -4,6 +4,91 @@
         display: inline-block;
         width: auto;
         vertical-align: middle;
+        table {
+            border-spacing: .5px;
+            border-collapse: separate;
+            font-size: 0;
+            tr {
+                td {
+                    height: 6px;
+                    width: 6px;
+                    -webkit-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -ms-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -moz-transition: background-color 175ms ease-out, border-radius 250ms ease-out; transition: background-color 175ms ease-out, border-radius 250ms ease-out;
+                }
+            }
+        }
+    }
+}
+@keyframes pixelDropAnim {
+    0% {
+        transform: scale(-3, -3) translate(0, 1000px);
+    }
+    100% {
+        transform: scale(1, 1) translate(0, 0);
+    }
+}
+@keyframes pixelSliceAnim {
+    0% {
+        opacity: 0;
+        transform: scale(-2, -2) skew(67.5deg, 67.5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1) skew(0deg, 0deg);
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .namePix div {
+        // DROP ANIMATION
+        // table tr {
+        //     &:nth-child(n + 1) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 1000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 6500ms ease;
+        //         }
+        //     }
+        //     &:nth-child(n + 2) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 2000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 5500ms ease;
+        //         }
+        //     }
+        //     &:nth-child(n + 3) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 3000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 4500ms ease;
+        //         }
+        //     }
+        //     &:nth-child(n + 4) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 4000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 3500ms ease;
+        //         }
+        //     }
+        //     &:nth-child(n + 5) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 5000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 2500ms ease;
+        //         }
+        //     }
+        //     &:nth-child(n + 6) {
+        //         td:nth-child(even) {
+        //             animation: pixelDropAnim 6000ms ease;
+        //         }
+        //         td:nth-child(odd) {
+        //             animation: pixelDropAnim 1500ms ease;
+        //         }
+        //     }
+        // }
         // SLICE ANIMATION
         &:nth-child(n + 1) {
             table tr td {
@@ -85,85 +170,6 @@
                 animation: pixelSliceAnim 4750ms ease-in;
             }
         }
-        table {
-            border-spacing: .5px;
-            border-collapse: separate;
-            font-size: 0;
-            tr {
-                td {
-                    height: 6px;
-                    width: 6px;
-                    -webkit-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -ms-transition: background-color 175ms ease-out, border-radius 250ms ease-out; -moz-transition: background-color 175ms ease-out, border-radius 250ms ease-out; transition: background-color 175ms ease-out, border-radius 250ms ease-out;
-                }
-                // DROP ANIMATION
-                // &:nth-child(n + 1) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 1000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 6500ms ease;
-                //     }
-                // }
-                // &:nth-child(n + 2) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 2000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 5500ms ease;
-                //     }
-                // }
-                // &:nth-child(n + 3) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 3000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 4500ms ease;
-                //     }
-                // }
-                // &:nth-child(n + 4) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 4000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 3500ms ease;
-                //     }
-                // }
-                // &:nth-child(n + 5) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 5000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 2500ms ease;
-                //     }
-                // }
-                // &:nth-child(n + 6) {
-                //     td:nth-child(even) {
-                //         animation: pixelDropAnim 6000ms ease;
-                //     }
-                //     td:nth-child(odd) {
-                //         animation: pixelDropAnim 1500ms ease;
-                //     }
-                // }
-            }
-        }
-    }
-}
-@keyframes pixelDropAnim {
-    0% {
-        transform: scale(-3, -3) translate(0, 1000px);
-    }
-    100% {
-        transform: scale(1, 1) translate(0, 0);
-    }
-}
-@keyframes pixelSliceAnim {
-    0% {
-        opacity: 0;
-        transform: scale(-2, -2) skew(67.5deg, 67.5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1, 1) skew(0deg, 0deg);
     }
 }
 
