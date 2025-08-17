@@ -39,9 +39,39 @@
     opacity: 1;
     transition: opacity 1000ms ease;
 }
+@keyframes pixelManSlice {
+    0% {
+        filter: invert(.5);
+        opacity: .05;
+        transform: skew(-45deg, -45deg) scale(.8, .8);
+    }
+    50% {
+        filter: invert(.75);
+        opacity: .75;
+        transform: skew(0deg, 0deg) scale(.8, .8)
+    }
+    100% {
+        filter: invert(0);
+        opacity: 1;
+        transform: skew(0deg, 0deg) scale(.8, .8)
+    }
+}
+@keyframes pixelManTeleport {
+    0% {
+        filter: blur(50px) drop-shadow(0 0 5em #FF0000) invert(.5);
+        opacity: .05;
+    }
+    50% {
+        filter: blur(0px) drop-shadow(0 0 1em #FF0000) invert(.75);
+        opacity: .75;
+    }
+    100% {
+        filter: blur(0px) drop-shadow(0 0 0 #FF0000) invert(0);
+        opacity: .05;
+    }
+}
 /* MAGICAL SWORD */
 .magicalSword {
-    /* top: 40px; */
     top: 60px;
     transform: translate(-200px, -250px);
     transition: opacity 1000ms ease, transform 500ms ease;
@@ -66,28 +96,33 @@
     100% { filter: drop-shadow(0 0 .2em #fcb514) drop-shadow(0 0 .3em #ffffff); opacity: .75; }
 }
 @keyframes flameFlicker {
-    50% { opacity: 1; transform: scale(-.8, .8); }
-    100% { opacity: 1; transform: scale(.8, .8); }
-}
-@keyframes pixelManAnim {
-    0% {
-        filter: drop-shadow(0 0 2em #FF0000) invert(.5);
-        opacity: .05;
-        transform: skew(-45deg, -45deg);
-    }
     50% {
-        filter: drop-shadow(0 0 1em #FF0000) invert(.75);;
-        opacity: .75;
+        opacity: 1; transform: scale(-.8, .8);
     }
     100% {
-        filter: drop-shadow(0 0 0 #FF0000) invert(0);
+        opacity: 1; transform: scale(.8, .8);
+    }
+}
+@keyframes flameIgnite {
+    0% {
+        filter: invert(.5);
         opacity: .05;
+        transform: scale(.8, .8) skew(-45deg, -45deg);
+    }
+    50% {
+        filter: invert(.75);
+        opacity: .75;
+        transform: scale(.8, .8) skew(0deg, 0deg);
+    }
+    100% {
+        filter: invert(0);
+        opacity: 1;
+        transform: scale(.8, .8) skew(0deg, 0deg);
     }
 }
 @media (prefers-reduced-motion: no-preference) {
     .flameArt {
-        animation: flameFlicker 200ms linear infinite;
-        animation-timing-function: steps(1, start);
+        animation: flameFlicker 200ms steps(1, start) infinite 6000ms, flameIgnite 1000ms ease-in-out 5000ms;
     }
     .flameArt table {
         animation: flameGlow 1500ms ease-in-out infinite alternate;
@@ -96,6 +131,6 @@
         animation: swordGlow 1500ms linear infinite alternate;
     }
     .pixelMan {
-        animation: pixelManAnim 5000ms ease-in-out;
+        animation: pixelManTeleport 5000ms ease-in-out;
     }
 }
