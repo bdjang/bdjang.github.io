@@ -3,6 +3,7 @@ import { useState } from "react";
 import PixelArt from './components/PixelArt.js'
 import Project from './components/Project.js'
 import PixelName from './components/PixelName.js'
+import Footer from './components/Footer.js'
 
 export default function App() {
     // Initialize ranColorOne and ranColorTwo React state variables, pass current values as props to PixelName and PixelArt components
@@ -34,6 +35,7 @@ export default function App() {
                     A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/" target="_blank" rel="noopener noreferrer">Visit project repo</a>
                 </>
             } />
+            <Footer />
         </>
     )
 }
