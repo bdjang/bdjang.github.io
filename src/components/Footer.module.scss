@@ -1,0 +1,36 @@
+footer {
+    font-family: 'Roboto Mono', monospace;
+    -webkit-transition: opacity 300ms linear; -ms-transition: opacity 300ms linear; -moz-transition: opacity 300ms linear; transition: opacity 300ms linear;
+    p {
+        font-size: 12px;
+        margin: 0 0 14px 0;
+        text-align: center;
+        width: 100%;
+        &:last-of-type {
+            margin: 0 0 40px 0;
+        }
+    }
+    /* Stamp Section */
+    section.sigStamp {
+        margin: 100px 0 10px 0;
+        text-align: center;
+        -webkit-user-select: none; user-select: none;
+        article div {
+            display: inline-block;
+            width: auto;
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                font-size: 0;
+                tr td {
+                    height: 2px;
+                    width: 2px;
+                    -webkit-transition: background-color 300ms linear; -ms-transition: background-color 300ms linear; -moz-transition: background-color 300ms linear; transition: background-color 300ms linear;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
