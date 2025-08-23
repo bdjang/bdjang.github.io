@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import styles from './ArtFeed.module.scss'
+import { useEffect, useState } from 'react';
+import styles from './ArtFeed.module.scss';
+import DOMPurify from 'dompurify';
 
 function useFetchData(url: string) {
     const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ export default function MyComponent() {
     return (
         <ul>
             {data.map((item: any) => (
-                <li dangerouslySetInnerHTML={{ __html: item.pixelCode }} />
+                <li key={item._id} title={item.createdAt} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.pixelCode) }} />
             ))}
         </ul>
     );
