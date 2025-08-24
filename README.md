@@ -1,5 +1,5 @@
 # bdjang.github.io
-A personal portfolio website hosted on GitHub Pages and built with Vite and React 18.
+This personal portfolio website is hosted on GitHub Pages and built with Vite and React 18. An Express.js application hosted on Heroku fetches digital art JSON data from a MongoDB cluster and serves it via RESTful APIs at the bottom of the website.
 
 ## Notes
 The `deploy.yml` file needs to be updated to make GitHub Actions function correctly. This required manually changing the version numbers in the file (e.g. `uses: actions/setup-node@v3` to `uses: actions/setup-node@v4`).
