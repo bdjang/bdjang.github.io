@@ -6,7 +6,7 @@
     height: 250px;
     margin: 0 auto;
     transition: filter 1000ms ease;
-    -webkit-transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
+    transform: rotateZ(360deg); /* Fixes 'floating' pixel art issue seen in Safari */
     user-select: none;
     -webkit-user-select: none;
     width: 320px;
@@ -27,7 +27,7 @@
     opacity: .05;
     width: 100%;
 }
-/* SUNGLASSES */
+/* MAGEHAT */
 .mageHat {
     left: 90px;
     top: -45px;
