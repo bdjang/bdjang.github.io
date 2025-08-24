@@ -12,8 +12,8 @@ function useFetchData(url: string) {
     return data;
 }
 
-export default function MyComponent() {
-    const data = useFetchData('#');
+export default function ArtFeed() {
+    const data = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
     return (
         <ul>
             {data.map((item: any) => (
