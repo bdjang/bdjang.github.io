@@ -56,4 +56,6 @@ import styles from "./Project.module.scss";
 </div>
 ```
 
+*You cannot apply styles just by importing; you must use `className={styles.className}` to apply styles.*
+
 10. Include `global.d.ts` in `tsconfig.json` file
