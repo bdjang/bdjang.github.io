@@ -15,7 +15,7 @@ function useFetchData(url: string) {
 export default function ArtFeed() {
     const data = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
     return (
-        <ul>
+        <ul className={styles.artItems}>
             {data.map((item: any) => (
                 <li key={item._id} title={item.createdAt} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.pixelCode) }} />
             ))}
