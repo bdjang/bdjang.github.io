@@ -36,8 +36,8 @@ export default function App() {
                     A tool for creating pixelated letters for emails or digital art. <a href="https://github.com/bdjang/" target="_blank" rel="noopener noreferrer">Visit project repo</a>
                 </>
             } />
-            <Footer />
             <ArtFeed />
+            <Footer />
         </>
     )
 }
