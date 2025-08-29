@@ -59,3 +59,7 @@ import styles from "./Project.module.scss";
 *You cannot apply styles just by importing; you must use `className={styles.className}` to apply styles.*
 
 10. Include `global.d.ts` in `tsconfig.json` file
+
+### Access to Art Feed
+
+The `corsOptions` object in [email-graffiti-collection-server](https://github.com/bdjang/email-graffiti-collection-server) specifies which domains have access to the Express.js server.
