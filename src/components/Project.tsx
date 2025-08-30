@@ -1,8 +1,8 @@
 import styles from "./Project.module.scss"
 
 interface projectProps { // Used to define types for objects, functions, and other structures in TypeScript
-    projectTitle: string;
-    projectDescription: string;
+    projectTitle: React.ReactNode; // Type for text, JSX, or components; maximum flexibility
+    projectDescription: React.ReactNode;
 }
 
 export default function Project(props: projectProps) {
