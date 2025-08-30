@@ -31,7 +31,7 @@ function useFetchData(url: string) {
 }
 
 export default function ArtFeed() {
-    const { data, loadingState } = useFetchData(import.meta.env.VITE_ARTFEED_URL);
+    const { data, loadingState } = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
     return (
         <section className={styles.artItems}>
             <ul>
