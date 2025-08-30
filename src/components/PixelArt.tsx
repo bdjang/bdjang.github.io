@@ -15,7 +15,7 @@ const bgColorNine = '#F38A0C';
 const bgColorTen = '#F93801';
 const bgColorEleven = '#FEA346';
 
-type PixelArtProps = { // Props type definition
+interface PixelArtProps { // Props type definition
     colorOne: string;
     colorTwo: string;
 }

@@ -5,7 +5,7 @@ const borderNum = 0;
 const pixelInitialColor = 'rgb(255, 255, 255)';
 const pixelEmptyColor = '';
 
-type PixelNameProps = { // Props type definition
+interface PixelNameProps { // Props type definition
     colorOne: string;
     colorTwo: string;
 }
