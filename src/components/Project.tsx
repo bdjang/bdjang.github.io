@@ -1,6 +1,11 @@
 import styles from "./Project.module.scss"
 
-export default function Project(props) {
+interface projectProps { // Used to define types for objects, functions, and other structures in TypeScript
+    projectTitle: string;
+    projectDescription: string;
+}
+
+export default function Project(props: projectProps) {
     return (
         <>
             <div className={styles.projectDesc}>
