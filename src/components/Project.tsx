@@ -8,10 +8,10 @@ interface projectProps { // Used to define types for objects, functions, and oth
 export default function Project(props: projectProps) {
     return (
         <>
-            <div className={styles.projectDesc}>
+            <article className={styles.projectDesc}>
                 <h2>{props.projectTitle}</h2>
                 <p>{props.projectDescription}</p>
-            </div>
+            </article>
         </>
     )
 }

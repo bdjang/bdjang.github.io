@@ -1,7 +1,7 @@
 /* PIXEL ART COMPONENT STYLES */
 
 /* PIXEL PANEL */
-.pixelPanel {
+section.pixelPanel {
     cursor: pointer;
     height: 250px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
     -webkit-user-select: none;
     width: 320px;
 }
-.pixelPanel:hover {
+section.pixelPanel:hover {
     transition: filter 1000ms linear;
 }
 /* PIXEL ART */
@@ -35,7 +35,7 @@
     transform: translate(0, -500px);
 }
 /* PIXEL MAN */
-.pixelPanel:hover .pixelMan {
+section.pixelPanel:hover .pixelMan {
     opacity: 1;
     transition: opacity 1000ms ease;
 }
