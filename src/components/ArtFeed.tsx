@@ -28,7 +28,7 @@ export default function ArtFeed() {
                 {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : '' } {/* This is a conditional rendering expression in React */}
                 {/* === is the strict equality operator. It checks that both value and type are the same. */}
                 {data.map((item: any) => (
-                    <li key={item._id} title={item.createdAt} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.pixelCode) }} />
+                    <li draggable={true} key={item._id} title={item.createdAt} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.pixelCode) }} />
                 ))}
             </ul>
         </section>
