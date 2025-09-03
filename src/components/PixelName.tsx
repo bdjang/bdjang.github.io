@@ -34,3 +34,9 @@ export default function PixelName({ colorOne, colorTwo }: PixelNameProps) { // P
         </>
     )
 }
+
+// 9.1.25: This form uses the whole props object:
+// export default function PixelName(props: PixelNameProps)
+
+// 9.1.25: Destructured props form (preferred form) used for direct access to specific values:
+// export default function PixelName({ colorOne, colorTwo }: PixelNameProps)
