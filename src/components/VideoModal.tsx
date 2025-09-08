@@ -9,7 +9,6 @@ export default function VideoModal({ src, setSelectedProject }: videoProps) { //
     return (
         <>
             <section
-                onClick={() => setSelectedProject(null)}
                 className={styles.modalVideo}>
                 <video src={src} width="470" height="540" controls></video>
                 <a onClick={() => setSelectedProject(null)}>Close</a>
