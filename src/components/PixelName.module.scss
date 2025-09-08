@@ -26,14 +26,32 @@ section.namePix {
         transform: scale(1, 1) translate(0, 0);
     }
 }
-@keyframes pixelSliceAnim {
+@keyframes pixelRevealAnim {
     0% {
+        background-color: rgba(136, 8, 8, 1);
         opacity: 0;
-        transform: scale(-2, -2) skew(67.5deg, 67.5deg);
+        transform: scale(0, 0) skew(30deg, 30deg);
+    }
+    100% {
+        background-color: rgba(136, 8, 8, 1);
+        opacity: 1;
+        transform: scale(1, 1) skew(0deg, 0deg);
+    }
+}
+@keyframes pixelLoadAnim {
+    0% {
+        background-color: rgba(136, 8, 8, 1);
+        opacity: 0;
+        transform: rotateY(0deg) scale(2, 2) skew(-67.5deg, -67.5deg);
+    }
+    50% {
+        background-color: rgba(136, 8, 8, 1);
+        opacity: 0.5;
+        transform: rotateY(90deg) scale(2, 2) skew(67.5deg, 67.5deg);
     }
     100% {
         opacity: 1;
-        transform: scale(1, 1) skew(0deg, 0deg);
+        transform: rotateY(0deg) scale(1, 1) skew(0deg, 0deg);
     }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -89,85 +107,166 @@ section.namePix {
         //         }
         //     }
         // }
-        // SLICE ANIMATION
+        // REVEAL ANIMATION
+        // &:nth-child(n + 1) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 1000ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 2) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 1250ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 3) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 1500ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 4) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 1750ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 5) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 2000ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 6) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 2250ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 7) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 2500ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 8) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 2750ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 9) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 3000ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 10) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 3250ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 11) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 3500ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 12) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 3750ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 13) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 4000ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 14) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 4250ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 15) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 4500ms ease-in;
+        //     }
+        // }
+        // &:nth-child(n + 16) {
+        //     table tr td {
+        //         animation: pixelRevealAnim 4750ms ease-in;
+        //     }
+        // }
+        // LOAD ANIMATION
         &:nth-child(n + 1) {
             table tr td {
-                animation: pixelSliceAnim 1000ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in;
             }
         }
         &:nth-child(n + 2) {
             table tr td {
-                animation: pixelSliceAnim 1250ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in;
             }
         }
         &:nth-child(n + 3) {
             table tr td {
-                animation: pixelSliceAnim 1500ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in;
             }
         }
         &:nth-child(n + 4) {
             table tr td {
-                animation: pixelSliceAnim 1750ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in;
             }
         }
         &:nth-child(n + 5) {
             table tr td {
-                animation: pixelSliceAnim 2000ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in;
             }
         }
         &:nth-child(n + 6) {
             table tr td {
-                animation: pixelSliceAnim 2250ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in;
             }
         }
         &:nth-child(n + 7) {
             table tr td {
-                animation: pixelSliceAnim 2500ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in;
             }
         }
         &:nth-child(n + 8) {
             table tr td {
-                animation: pixelSliceAnim 2750ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in;
             }
         }
         &:nth-child(n + 9) {
             table tr td {
-                animation: pixelSliceAnim 3000ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in;
             }
         }
         &:nth-child(n + 10) {
             table tr td {
-                animation: pixelSliceAnim 3250ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in;
             }
         }
         &:nth-child(n + 11) {
             table tr td {
-                animation: pixelSliceAnim 3500ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in;
             }
         }
         &:nth-child(n + 12) {
             table tr td {
-                animation: pixelSliceAnim 3750ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in;
             }
         }
         &:nth-child(n + 13) {
             table tr td {
-                animation: pixelSliceAnim 4000ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in;
             }
         }
         &:nth-child(n + 14) {
             table tr td {
-                animation: pixelSliceAnim 4250ms ease-in;
+                animation: pixelLoadAnim 250ms ease-in;
             }
         }
         &:nth-child(n + 15) {
             table tr td {
-                animation: pixelSliceAnim 4500ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in;
             }
         }
         &:nth-child(n + 16) {
             table tr td {
-                animation: pixelSliceAnim 4750ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in;
             }
         }
     }
