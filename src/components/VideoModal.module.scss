@@ -2,7 +2,7 @@ section.modalVideo {
     background-color: #1f1f1f;
     font-family: 'Roboto Mono', monospace;
     left: 3%;
-    padding: 40px 0;
+    padding: 80px 0;
     position: fixed;
     text-align: center;
     top: 10%;
@@ -23,7 +23,7 @@ section.modalVideo {
         }
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 819px) {
     section.modalVideo video {
         height: 100%;
         width: 100%;
