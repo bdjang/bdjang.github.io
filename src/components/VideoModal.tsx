@@ -10,7 +10,7 @@ export default function VideoModal({ src, setSelectedProject }: videoProps) { //
         <>
             <section className={styles.modalVideo}>
                 <a onClick={() => setSelectedProject(null)}>Close</a> {/* React event handler that calls setSelectedProject function with null as argument and resets selected project state in parent component */}
-                {typeof src === 'string' && src.includes('graffiti') ? <video src={src} width="478" height="540" controls></video> : <video src={src} width="800" height="500" controls></video>}
+                {typeof src === 'string' && src.includes('graffiti') ? <video src={src} width="478" height="540" controls></video> : <video src={src} width="750" height="500" controls></video>}
             </section>
         </>
     )
