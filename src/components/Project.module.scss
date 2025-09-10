@@ -32,3 +32,8 @@ article.projectDesc {
         text-align: left;
     }
 }
+@media screen and (max-width: 745px) {
+    article.projectDesc {
+        margin: 20px 0;
+    }
+}
