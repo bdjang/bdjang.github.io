@@ -23,7 +23,7 @@ export default function Footer() {
                     </article>
                 </section>
                 <p>A Digital Art Experiment by Djang</p>
-                {/* <p>© {currentDate} Email Graffiti. All rights reserved.</p> */}
+                <p>© {currentDate} Email Graffiti. All rights reserved.</p>
             </footer>
         </>
     )
