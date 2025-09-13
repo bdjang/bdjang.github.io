@@ -12,12 +12,14 @@ export default function VideoModal({ src, setSelectedProject }: videoProps) { //
                 tabIndex={0}
                 className={styles.modalVideo}
                 onKeyDown={(e) => {
-                    if (e.key == 'Escape') {
+                    if (e.key === 'Escape') {
                         setSelectedProject(null);
                     }
                 }}>
                 <a onClick={() => setSelectedProject(null)}>Close</a> {/* React event handler that calls setSelectedProject function with null as argument and resets selected project state in parent component */}
-                {typeof src === 'string' && src.includes('graffiti') ? <video src={src} width="478" height="540" controls></video> : <video src={src} width="750" height="500" controls></video>}
+                {typeof src === 'string' && src.includes('graffiti')
+                    ? <video src={src} width="478" height="540" controls></video>
+                    : <video src={src} width="750" height="500" controls></video>}
             </section>
         </>
     )
