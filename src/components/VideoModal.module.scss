@@ -22,6 +22,9 @@ section.modalVideo {
             text-decoration: none;
         }
     }
+    video:focus {
+        outline: none;
+    }
 }
 @media screen and (max-width: 819px) {
     section.modalVideo video {
