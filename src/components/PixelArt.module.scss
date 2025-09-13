@@ -24,7 +24,7 @@ section.pixelPanel:hover {
     transition: filter 500ms ease;
 }
 .pixelMan {
-    opacity: .05;
+    opacity: .15;
     width: 100%;
 }
 /* MAGEHAT */
@@ -67,7 +67,7 @@ section.pixelPanel:hover .pixelMan {
     }
     100% {
         filter: blur(0px) drop-shadow(0 0 0 #FF0000) invert(0);
-        opacity: .05;
+        opacity: .15;
     }
 }
 /* MAGICAL SWORD */
