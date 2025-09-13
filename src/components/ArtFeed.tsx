@@ -31,7 +31,7 @@ export default function ArtFeed() {
                     <li
                         draggable={true}
                         key={item._id}
-                        title={item.createdAt}
+                        title={item.pixelName}
                         dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.pixelCode) }}
                     />
                 ))}
