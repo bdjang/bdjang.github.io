@@ -16,10 +16,11 @@ section.modalVideo {
         margin: 20px;
         position: absolute;
         right: 0;
-        text-decoration: underline;
         top: 0;
+        transition: color 175ms ease-out;
         &:hover {
-            text-decoration: none;
+            color: rgba(136, 8, 8, 1);
+            cursor: pointer;
         }
     }
     video:focus {
