@@ -20,6 +20,10 @@ function useFetchData(url: string) {
     return { data, loadingState };
 }
 
+// Art Feed Item Limiter
+const itemMaxPoint = Math.floor(Math.random() * 79) + 10; // Results with 10 -> 88
+const itemStartingPoint = itemMaxPoint - 10;
+
 export default function ArtFeed() {
     const { data, loadingState } = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
     return (
@@ -27,7 +31,7 @@ export default function ArtFeed() {
             <ul>
                 {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : '' } {/* This is a conditional rendering expression in React */}
                 {/* === is the strict equality operator. It checks that both value and type are the same. */}
-                {data.map((item: any) => (
+                {data.slice(itemStartingPoint, itemMaxPoint).map((item: any) => (
                     <li
                         draggable={true}
                         key={item._id}
