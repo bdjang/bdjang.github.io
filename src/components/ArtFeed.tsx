@@ -20,18 +20,36 @@ function useFetchData(url: string) {
     return { data, loadingState };
 }
 
-// Art Feed Item Limiter
-const itemMaxPoint = Math.floor(Math.random() * 79) + 10; // Results with 10 -> 88
-const itemStartingPoint = itemMaxPoint - 10;
 
 export default function ArtFeed() {
     const { data, loadingState } = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
+    const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
+
+    // Generate random indexes after data is loaded
+    useEffect(() => {
+        if (loadingState === loadingStatus.loaded && data.length > 0) {
+            const ranItemArray = [
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length), 
+                Math.floor(Math.random() * data.length)
+            ];
+            setSelectedIndexes(ranItemArray);
+        }
+    }, [loadingState, data.length]);
+    
     return (
         <section className={styles.artItems}>
             <ul>
                 {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : '' } {/* This is a conditional rendering expression in React */}
                 {/* === is the strict equality operator. It checks that both value and type are the same. */}
-                {data.slice(itemStartingPoint, itemMaxPoint).map((item: any) => (
+                {data.filter((item: any, index: number) => selectedIndexes.includes(index)).map((item: any) => (
                     <li
                         draggable={true}
                         key={item._id}
