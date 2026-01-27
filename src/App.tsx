@@ -58,6 +58,17 @@ export default function App() {
                         </>
                     } />
                 }
+                {selectedProject ? <VideoModal src={selectedProject} setSelectedProject={setSelectedProject} /> :
+                    <Project
+                        src={placeholderVideo}
+                        selectProject={() => setSelectedProject(placeholderVideo)}
+                        projectTitle="Email Graffiti Wall"
+                        projectDescription={
+                        <>
+                            A digital art tool for creating freehand art that can be placed into email quickly and spontaneously.
+                        </>
+                    } />
+                }
             </section>
             <ArtFeed />
             <Footer />
