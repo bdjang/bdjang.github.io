@@ -65,7 +65,7 @@ export default function App() {
                         projectTitle="Email Graffiti Wall"
                         projectDescription={
                         <>
-                            A digital art tool for creating freehand art that can be placed into email quickly and spontaneously.
+                            Real-time rendering of email graffiti art.
                         </>
                     } />
                 }
