@@ -54,7 +54,7 @@ export default function App() {
                         projectTitle="Email Graffiti"
                         projectDescription={
                         <>
-                            A digital art tool for creating freehand art that can be placed into email quickly and spontaneously.
+                            A digital art tool for creating freehand pixel art that can be placed directly into email quickly and spontaneously.
                         </>
                     } />
                 }
@@ -65,7 +65,7 @@ export default function App() {
                         projectTitle="Email Graffiti Wall"
                         projectDescription={
                         <>
-                            Real-time rendering of email graffiti art.
+                            Real-time rendering of pixel art created through Email Graffiti.
                         </>
                     } />
                 }
