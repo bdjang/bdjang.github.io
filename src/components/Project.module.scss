@@ -11,20 +11,34 @@ article.projectDesc {
     padding: 20px;
     vertical-align: top;
     width: 300px;
-    span.comingSoon {
-        background: linear-gradient(225deg, rgba(0, 0, 0, 0), 10%, rgb(0, 0, 0) 10%), linear-gradient(215deg, rgb(252, 181, 20), 5%, rgb(0, 0, 0) 10%);
-        box-shadow: 0px 0px 10px rgba(252, 181, 20, .2);
-        color: rgba(252, 181, 20, 1);
-        display: block;
-        font-weight: 400;
-        padding: 0;
-        transform: rotate(-4deg) translate(-30px, -10px);
-        width: 360px;
+    span {
+        &.projectBanner {
+            display: block;
+            font-weight: 600;
+            padding: 0;
+            transform: rotate(-4deg) translate(-30px, -10px);
+            width: 360px;
+        }
+        &.comingSoon {
+            background: linear-gradient(225deg, rgba(0, 0, 0, 0), 10%, rgb(0, 0, 0) 10%), linear-gradient(215deg, rgb(252, 181, 20), 5%, rgb(0, 0, 0) 10%);
+            box-shadow: 0px 0px 10px rgba(252, 181, 20, .35);
+            color: rgba(252, 181, 20, 1);
+        }
+        &.beta {
+            background: linear-gradient(225deg, rgba(0, 0, 0, 0), 10%, rgb(0, 0, 0) 10%), linear-gradient(215deg, rgb(39, 103, 244), 5%, rgb(0, 0, 0) 10%);
+            box-shadow: 0px 0px 10px rgba(39, 103, 244, .35);
+            color: rgba(39, 103, 244, 1);
+        }
+        &.launched {
+            background: linear-gradient(225deg, rgba(0, 0, 0, 0), 10%, rgb(0, 0, 0) 10%), linear-gradient(215deg, rgb(41, 255, 91), 5%, rgb(0, 0, 0) 10%);
+            box-shadow: 0px 0px 10px rgba(41, 255, 91, .35);
+            color: rgba(41, 255, 91, 1);
+        }
     }
     h2 {
         transition: color 175ms ease-out;
         &:hover {
-            color: rgba(136, 8, 8, 1);
+            color: #e6edf3;
             // cursor: pointer; 12.8.25: commented out for now, uncomment when new videos are set
         }
     }
