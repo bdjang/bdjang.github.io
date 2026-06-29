@@ -20,9 +20,8 @@ function useFetchData(url: string) {
     return { data, loadingState };
 }
 
-
 export default function ArtFeed() {
-    const { data, loadingState } = useFetchData('https://eg-collection-server-89ee5d23663f.herokuapp.com/');
+    const { data, loadingState } = useFetchData('https://email-graffiti-server-0fd7ed6ea495.herokuapp.com/api/save-pixel-art');
     const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
 
     // Generate random indexes after data is loaded
@@ -49,7 +48,10 @@ export default function ArtFeed() {
             <ul>
                 {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : '' } {/* This is a conditional rendering expression in React */}
                 {/* === is the strict equality operator. It checks that both value and type are the same. */}
-                {data.filter((item: any, index: number) => selectedIndexes.includes(index)).map((item: any) => (
+                {data
+                    .filter((item: any) => item.isPublic === true)
+                    .filter((item: any, index: number) => selectedIndexes.includes(index))
+                    .map((item: any) => (
                     <li
                         draggable={true}
                         key={item._id}
