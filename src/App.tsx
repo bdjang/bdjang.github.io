@@ -24,7 +24,7 @@ export default function App() {
                 <h2>I am a web tinkerer. I experiment with code. I sometimes create digital art.</h2>
             </section>
             <hr />
-            <section>
+            <section className="projectSection">
                 {selectedProject ? <VideoModal src={selectedProject} setSelectedProject={setSelectedProject} /> :
                     <Project
                         src={placeholderVideo}
