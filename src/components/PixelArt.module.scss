@@ -12,7 +12,7 @@ section.pixelPanel {
     width: 320px;
 }
 section.pixelPanel:hover {
-    transition: filter 1000ms linear;
+    transition: filter 500ms ease-in-out;
 }
 /* PIXEL ART */
 .mageHat, .pixelMan, .magicalSword, .flameArt {
@@ -37,7 +37,7 @@ section.pixelPanel:hover {
 /* PIXEL MAN */
 section.pixelPanel:hover .pixelMan {
     opacity: 1;
-    transition: opacity 1000ms ease;
+    transition: opacity 500ms ease-in-out;
 }
 @keyframes pixelManSlice {
     0% {
