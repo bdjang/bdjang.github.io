@@ -8,6 +8,10 @@
     section.introText h2 {
         margin: 60px 0 20px 0;
     }
+    section.projectSection {
+        max-width: 900px;
+        margin: 0 auto;
+    }
     hr {
         background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(136, 8, 8, 1), 75%, rgba(0, 0, 0, 1) 100%);
         border: none;
