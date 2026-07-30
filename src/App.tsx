@@ -32,7 +32,7 @@ export default function App() {
                         projectTitle="Charts.Email"
                         projectDescription={ // Pass the link as a prop and compose the description in JSX
                         <>
-                            Tool for building bar charts for HTML email templates. <a href="https://charts.email/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Data visualization tool for building bar charts in HTML email templates. <a href="https://charts.email/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
@@ -43,7 +43,7 @@ export default function App() {
                         projectTitle="Email Graffiti"
                         projectDescription={
                         <>
-                            Digital art tool for creating freehand art specifically for email. <a href="https://emailgraffiti.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Digital art tool for creating code-based art specifically for email. <a href="https://emailgraffiti.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
@@ -54,7 +54,7 @@ export default function App() {
                         projectTitle="Email Graffiti Wall"
                         projectDescription={
                         <>
-                            Real-time rendering of pixel art created through Email Graffiti.  <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Real-time rendering of pixel art created with Email Graffiti.  <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
