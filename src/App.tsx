@@ -54,7 +54,7 @@ export default function App() {
                         projectTitle="Email Graffiti Wall"
                         projectDescription={
                         <>
-                            Real-time rendering of pixel art created with Email Graffiti.  <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Real-time rendering of pixel art created with Email Graffiti. <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
@@ -65,7 +65,7 @@ export default function App() {
                         projectTitle="Djang Email Art"
                         projectDescription={
                         <>
-                            Site for managing and showcasing personal digital art collection.
+                            Site for managing and showcasing personal digital art collection. <a href="https://eg-collection-55c387f3699e.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
