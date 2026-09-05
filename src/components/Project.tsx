@@ -13,8 +13,8 @@ export default function Project({ projectTitle, projectDescription, selectProjec
             <article className={styles.projectDesc}>
                 {typeof projectTitle === 'string' && (
                     // styles.comingSoon, styles.beta, styles.launched
-                    projectTitle.includes('Djang') || projectTitle.includes('Email Graffiti') ? <span className={`${styles.beta} ${styles.projectBanner}`}>Beta</span>
-                    : projectTitle.includes('Charts') ? <span className={`${styles.launched} ${styles.projectBanner}`}>Launched</span>
+                    projectTitle.includes('Djang') || projectTitle.includes('Email Graffiti Wall') ? <span className={`${styles.beta} ${styles.projectBanner}`}>Beta</span>
+                    : projectTitle.includes('Charts') || projectTitle.includes('Email Graffiti') ? <span className={`${styles.launched} ${styles.projectBanner}`}>Launched</span>
                     : null
                 )}
                 <h2 /* commented out for now, uncomment when new videos are set; onClick={() => selectProject(src) } */>{projectTitle}</h2> {/* Using conditional rendering to include an h2 class. Pass only the video source (src) to selectProject, not the React element. Let the parent component handle rendering <VideoModal /> based on the selected video. */}
