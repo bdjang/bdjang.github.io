@@ -12,8 +12,8 @@ export default function Project({ projectTitle, projectDescription, selectProjec
         <>
             <article className={styles.projectDesc}>
                 {typeof projectTitle === 'string' && (
-                    // styles.comingSoon, styles.beta, styles.launched
-                    projectTitle.includes('Djang') || projectTitle.includes('Email Graffiti Wall') ? <span className={`${styles.beta} ${styles.projectBanner}`}>Beta</span>
+                    // styles.comingSoon, styles.softLaunch, styles.launched
+                    projectTitle.includes('Djang') || projectTitle.includes('Email Graffiti Wall') ? <span className={`${styles.softLaunch} ${styles.projectBanner}`}>Soft Launch</span>
                     : projectTitle.includes('Charts') || projectTitle.includes('Email Graffiti') ? <span className={`${styles.launched} ${styles.projectBanner}`}>Launched</span>
                     : null
                 )}
