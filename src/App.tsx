@@ -43,7 +43,7 @@ export default function App() {
                         projectTitle="EmailGraffiti.com"
                         projectDescription={
                         <>
-                            Digital art tool for creating code-based art specifically for email. <a href="https://emailgraffiti.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Digital art tool for creating HTML art specifically for email. <a href="https://emailgraffiti.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
