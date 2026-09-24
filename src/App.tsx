@@ -65,7 +65,7 @@ export default function App() {
                         projectTitle="Djang Email Art"
                         projectDescription={
                         <>
-                            Site for managing and showcasing personal digital art collection. <a href="https://eg-collection-55c387f3699e.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Site for showcasing and distributing my personal HTML art collection. <a href="https://eg-collection-55c387f3699e.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
