@@ -54,7 +54,7 @@ export default function App() {
                         projectTitle="Email Graffiti Wall"
                         projectDescription={
                         <>
-                            Real-time rendering of HTML art created with Email Graffiti. <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Real-time rendering of public HTML art created with Email Graffiti. <a href="https://email-graffiti-wall-642e35ea01e9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
