@@ -69,6 +69,17 @@ export default function App() {
                         </>
                     } />
                 }
+                {selectedProject ? <VideoModal src={selectedProject} setSelectedProject={setSelectedProject} /> :
+                    <Project
+                        src={placeholderVideo}
+                        selectProject={() => setSelectedProject(placeholderVideo)}
+                        projectTitle="AI-Generated Polling Newsletter"
+                        projectDescription={
+                        <>
+                            Experimenting with AI to build my own election polling newsletter.
+                        </>
+                    } />
+                }
             </section>
             <ArtFeed />
             <Footer />
