@@ -5,7 +5,7 @@ article.projectDesc {
     background-color: #1f1f1f;
     box-shadow: rgba(0, 0, 0, 1) 0px 2px 3px;
     display: inline-block;
-    height: 200px;
+    height: auto;
     margin: 30px;
     max-width: 300px;
     padding: 20px;
@@ -44,6 +44,7 @@ article.projectDesc {
     }
     p {
         color: #848d97;
+        margin: 0;
         text-align: left;
     }
 }
