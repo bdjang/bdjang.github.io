@@ -76,7 +76,7 @@ export default function App() {
                         projectTitle="AI-Generated Polling Newsletter"
                         projectDescription={
                         <>
-                            Experimenting with AI to build my own election polling newsletter.
+                            Experimenting with AI to build my own election polling newsletter. <a href="https://dev.to/bdjang/using-ai-to-build-my-own-midterm-elections-newsletter-4g6a">Read article</a>
                         </>
                     } />
                 }
