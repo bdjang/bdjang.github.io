@@ -45,11 +45,8 @@ export default function ArtFeed() {
     
     return (
         <section className={styles.artItems}>
-            <h3>
-                Live Email Graffiti Art Feed
-            </h3>
             <ul>
-                {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : '' } {/* This is a conditional rendering expression in React */}
+                {loadingState === loadingStatus.isLoading ? <LoadingIndicator loadingState={loadingState} /> : <h2>{loadingStatus.loaded}</h2> } {/* This is a conditional rendering expression in React */}
                 {/* === is the strict equality operator. It checks that both value and type are the same. */}
                 {data
                     .filter((item: any) => item.isPublic === true)
