@@ -2,7 +2,7 @@
 
 const loadingStatus = {
     loaded: 'Live Email Graffiti Art Feed',
-    isLoading: 'Loading...',
+    isLoading: 'Loading Art Feed...',
     hasErrored: 'An error occurred while loading',
 };
 
