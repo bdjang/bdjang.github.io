@@ -32,7 +32,7 @@ export default function App() {
                         projectTitle="Charts.Email"
                         projectDescription={ // Pass the link as a prop and compose the description in JSX
                         <>
-                            Data visualization tool for building bar charts in HTML email templates. <a href="https://charts.email/" target="_blank" rel="noopener noreferrer">Visit project site</a>
+                            Data viz tool for generting code-based bar charts for HTML email templates. <a href="https://charts.email/" target="_blank" rel="noopener noreferrer">Visit project site</a>
                         </>
                     } />
                 }
