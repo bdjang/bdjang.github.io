@@ -1,7 +1,7 @@
 // React helpers are utility functions, custom hooks, or small components that assist with common tasks in React apps
 
 const loadingStatus = {
-    loaded: 'Live Email Graffiti Art Feed',
+    loaded: 'Live Email Graffiti Wall Art Feed',
     isLoading: 'Loading Randomized Art Feed...',
     hasErrored: 'An error occurred while loading',
 };
