@@ -51,7 +51,7 @@ section.namePix {
     }
     100% {
         opacity: 1;
-        transform: rotateY(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform: rotateY(0deg) scale(-3, -3) skew(45deg, 45deg);
     }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -191,82 +191,82 @@ section.namePix {
         // LOAD ANIMATION
         &:nth-child(n + 1) {
             table tr td {
-                animation: pixelLoadAnim 0ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in-out;
             }
         }
         &:nth-child(n + 2) {
             table tr td {
-                animation: pixelLoadAnim 750ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in-out;
             }
         }
         &:nth-child(n + 3) {
             table tr td {
-                animation: pixelLoadAnim 1000ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in-out;
             }
         }
         &:nth-child(n + 4) {
             table tr td {
-                animation: pixelLoadAnim 1250ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in-out;
             }
         }
         &:nth-child(n + 5) {
             table tr td {
-                animation: pixelLoadAnim 0ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in-out;
             }
         }
         &:nth-child(n + 6) {
             table tr td {
-                animation: pixelLoadAnim 750ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in-out;
             }
         }
         &:nth-child(n + 7) {
             table tr td {
-                animation: pixelLoadAnim 1000ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in-out;
             }
         }
         &:nth-child(n + 8) {
             table tr td {
-                animation: pixelLoadAnim 1250ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in-out;
             }
         }
         &:nth-child(n + 9) {
             table tr td {
-                animation: pixelLoadAnim 0ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in-out;
             }
         }
         &:nth-child(n + 10) {
             table tr td {
-                animation: pixelLoadAnim 750ms ease-in;
+                animation: pixelLoadAnim 750ms ease-in-out;
             }
         }
         &:nth-child(n + 11) {
             table tr td {
-                animation: pixelLoadAnim 1000ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in-out;
             }
         }
         &:nth-child(n + 12) {
             table tr td {
-                animation: pixelLoadAnim 1250ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in-out;
             }
         }
         &:nth-child(n + 13) {
             table tr td {
-                animation: pixelLoadAnim 0ms ease-in;
+                animation: pixelLoadAnim 0ms ease-in-out;
             }
         }
         &:nth-child(n + 14) {
             table tr td {
-                animation: pixelLoadAnim 250ms ease-in;
+                animation: pixelLoadAnim 250ms ease-in-out;
             }
         }
         &:nth-child(n + 15) {
             table tr td {
-                animation: pixelLoadAnim 1000ms ease-in;
+                animation: pixelLoadAnim 1000ms ease-in-out;
             }
         }
         &:nth-child(n + 16) {
             table tr td {
-                animation: pixelLoadAnim 1250ms ease-in;
+                animation: pixelLoadAnim 1250ms ease-in-out;
             }
         }
     }
