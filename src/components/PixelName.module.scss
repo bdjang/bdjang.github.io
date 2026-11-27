@@ -44,12 +44,16 @@ section.namePix {
         opacity: 0;
         transform: rotateY(0deg) scale(2, 2) skew(-67.5deg, -67.5deg);
     }
-    50% {
+    25% {
         background-color: rgba(136, 8, 8, 1);
         opacity: 0.5;
         transform: rotateY(90deg) scale(2, 2) skew(67.5deg, 67.5deg);
     }
-    100% {
+    50% {
+        opacity: 1;
+        transform: rotateY(0deg) scale(-3, -3) skew(45deg, 45deg);
+    }
+    75% {
         opacity: 1;
         transform: rotateY(0deg) scale(-3, -3) skew(45deg, 45deg);
     }
